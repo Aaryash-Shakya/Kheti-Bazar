@@ -3,7 +3,6 @@
 // import LandingPage from "./pages/LandingPage";
 
 import Dashboard from "./components/dashboard/Dashboard";
-// import Sidebar from "./components/dashboard/templates/Sidebar"
 
 function App() {
   return (

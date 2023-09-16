@@ -1,0 +1,16 @@
+.logo-img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.back-black{
+    background-color: #000000;
+    height: 70vh;
+}
+
+.side-bar{
+    height: 100vh;
+}
+

@@ -46,15 +46,44 @@ exports.contractNotVerified = async (req, res) => {
 
 exports.contractDetail = async (req, res) => {
   let contract = await Contract.findById(req.params.cid)
-    .populate({
-      path: 'orders',
+  // .populate('order')  
+  .populate({
+      path: 'order',
       populate: {
-        path: 'crops',
+        path: 'crop',
         model: 'Crop',
       },
     })
+  .populate([
+    {
+    path: 'farmer_id',
+    model: 'User'
+    },
+    {
+    path: 'buyer_id',
+    model: 'User'
+    }
+
+  ])
+  // const orderID = contract.order._id
+  // let order = await Contract.findById(orderID)
+  // .populate('crops')
+
   if (!contract) {
     return res.status(404).json({ error: 'something went wrong' })
   }
   res.send(contract)
+}
+
+exports.contractStatus = async (req, res) => {
+  let contract = await Contract.findById(req.params.cid)
+  if (contract.status<0 || contract.status>3) {
+    return res.status(500).json({ error: 'invalid status' })
+  }
+  contract.status = req.body.status
+  contract = await contract.save()
+  if (!contract) {
+    return res.status(500).json({ error: 'failed to update status' })
+  }
+  return res.status(200).json({ msg: `contract status: ${contract.status}` })
 }

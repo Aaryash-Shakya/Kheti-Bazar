@@ -1,19 +1,25 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
+require('./db/connection')
+const morgan = require('morgan')
+
 
 
 
 const fruitRoute = require('./routes/fruitRoute')
+const userRoute = require('./routes/userRoute')
+
 // middleware
+app.use(morgan('dev'))
+app.use(express.json())
 
 // routes middleware - check if we can let the req proceed forward or not
 app.get('/', (req, res) => {
   res.send('express works')
 })
 app.use('/api',fruitRoute)
-
-
+app.use('/api',userRoute)
 
 
 

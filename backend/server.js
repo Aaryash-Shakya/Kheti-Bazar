@@ -8,6 +8,7 @@ const morgan = require('morgan')
 
 
 const userRoute = require('./routes/userRoute')
+const cropRoute = require('./routes/cropRoute')
 
 // middleware
 app.use(morgan('dev'))
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
   res.send('express works')
 })
 app.use('/api',userRoute)
+app.use('/api',cropRoute)
 
 
 

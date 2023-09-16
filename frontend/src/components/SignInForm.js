@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 
 
+import { useNavigate } from 'react-router-dom'
+
 import Logo from "../assets/images/Logo.png"
+import axios from 'axios';
+
+import { backendUrl } from '../Api';
 
 const SignInForm = () => {
+
+    const navigate = useNavigate()
 
     const [role, setRole] = useState(''); // State to store the selected value
     const [email, setEmail] = useState('');
@@ -26,24 +33,14 @@ const SignInForm = () => {
         };
 
         try {
-            // Make a POST request to your API
-            const response = await fetch('your-api-endpoint-url', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            axios.post(`${backendUrl}api/signin`, formData)
+                .then(data => {
+                    navigate('/profile')
+                    localStorage.setItem('uid', data.data.user._id)
+                    localStorage.setItem('urole', data.data.user.role)
+                })
+                .catch(err => console.log(err))
 
-            if (response.ok) {
-                // Handle a successful response here
-                const data = await response.json();
-                console.log(data);
-                // send kyc msg
-            } else {
-                // Handle errors here
-                console.error('Error:', response.status);
-            }
         } catch (error) {
             // Handle network or other errors
             console.error('Error:', error);

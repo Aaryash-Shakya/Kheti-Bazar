@@ -3,10 +3,10 @@ import React, { useEffect } from 'react'
 import News from '../../assets/images/News.png'
 const Contract = () => {
     useEffect(() => {
-        const setActive = () =>{
+        const setActive = () => {
             document.getElementById('contractBorder').classList.add('active-border')
         }
-        setTimeout(() => { 
+        setTimeout(() => {
             setActive();
         }, 100);
     });
@@ -41,10 +41,12 @@ const Contract = () => {
                             <p className=''>
                                 Contracts: Your Path to Growth and Success. Seize the Opportunity, Ink the Deal, Reap the Rewards.Embrace contracts as the foundation of collaboration, trust, and progress. Seize the pen and let it ink your journey towards success, one contract at a time. Your commitment today is the harvest of prosperity tomorrow
                             </p>
-                            <button className="find-contracts-btn btn btn-success w-50 py-3">
-                                Find Contracts
-                                <Icon icon="ph:bag-fill" className='ms-2' />
-                            </button>
+                            <a href='/findContracts'>
+                                <button className="find-contracts-btn btn btn-success w-50 py-3">
+                                    Find Contracts
+                                    <Icon icon="ph:bag-fill" className='ms-2' />
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className="col-lg-1"></div>

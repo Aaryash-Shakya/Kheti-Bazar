@@ -15,7 +15,7 @@ exports.postOrder = async (req, res) => {
   })
   order = await order.save()
   if (!order) {
-    return res.status(400).json({ error: 'something went wrong while creating your account' })
+    return res.status(400).json({ error: 'something went wrong while creating your order' })
   }
   res.send(order)
 }

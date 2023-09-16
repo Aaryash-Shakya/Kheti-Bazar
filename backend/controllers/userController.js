@@ -64,7 +64,7 @@ exports.userList = async (req, res) => {
 }
 
 // user details
-exports.userDetails = async (req, res) => {
+exports.userDetail = async (req, res) => {
   const user = await User.findById(req.params.uid)
     .select('-password')
   if (!user) {

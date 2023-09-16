@@ -6,10 +6,11 @@ exports.postUser = async (req, res) => {
   let user = new User({
     name: req.body.name,
     email: req.body.email,
+    number: req.body.number,
     password: req.body.password,
     role: req.body.role,
   })
-  
+
   // check if email is already registered
   User.findOne({ email: user.email })
     .then(async data => {
@@ -34,7 +35,6 @@ exports.postUser = async (req, res) => {
 exports.signIn = async (req, res) => {
   // destructuring userSelect: 
   const { email, password } = req.body
-
   // at first check if email is registered in the database or not
   const user = await User.findOne({ email })
   if (!user) {
@@ -42,11 +42,39 @@ exports.signIn = async (req, res) => {
   }
   else if (user) {
     if (user.password === password) {
-      const { _id, name, role } = user
-      return res.json({ user: { _id, name, email, role } })
+      // object destructuring
+      const { _id, name, role, number } = user
+      return res.status(200).json({ user: { _id, name, email, role, number } })
     }
     else {
       return res.status(401).json({ error: 'Invalid password' })
     }
   }
+}
+
+// list all users
+exports.userList = async (req, res) => {
+  const user = await User.find()
+    .select('-password')
+    // minus password as we don't want to download password from the bd
+  if (!user) {
+    return res.status(404).json({ error: 'something went wrong' })
+  }
+  res.send(user)
+}
+
+// user details
+exports.userDetails = async (req, res) => {
+  const user = await User.findById(req.params.uid)
+    .select('-password')
+  if (!user) {
+    return res.status(404).json({ error: 'something went wrong' })
+  }
+  res.send(user)
+}
+
+// sign out
+exports.signOut = (req, res) => {
+  // res.clearCookie('loginCookie')
+  res.json({ message: 'signout success' })
 }

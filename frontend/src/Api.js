@@ -1,1 +1,1 @@
-exports.backendUrl = 'http://localhost:8000/';
+exports.backendUrl = 'http://localhost:8000/api'

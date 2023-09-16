@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 
 import Logo from "../assets/images/Logo.png"
@@ -56,85 +56,87 @@ const SignUpForm = () => {
 
     return (
         <div>
-            <div className='container d-flex align-items-center my-auto'>
-                <div>
-                    <img src={Logo} alt='' />
-                </div>
-                <div className='card p-5 w-100 bg-light' >
-                    <div className='fs-3'>
-                        Welcome !
+            <div className='container'>
+                <div className='row align-items-center' style={{ height: "100vh" }}>
+                    <div className='col-lg-6 col-sm-12'>
+                        <img src={Logo} alt='Logo' />
                     </div>
-                    <form id="signupForm" onSubmit={handleSubmit}>
-                        <div className="my-3">
-                            <label htmlFor="InputName" className="form-label fs-6 my-3">
-                                Name
-                            </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="InputName"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
+                    <div className='col-lg-6 col-sm-12 p-5 bg-light  border border-secondary-subtle rounded-2' >
+                        <div className='fs-3'>
+                            Welcome !
                         </div>
-                        <div className="my-3">
-                            <label htmlFor="InputEmail" className="form-label fs-6 my-3">
-                                Email address
-                            </label>
-                            <input
-                                type="email"
-                                className="form-control"
-                                id="InputEmail"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
+                        <form id="signupForm" onSubmit={handleSubmit}>
+                            <div className="my-3">
+                                <label htmlFor="InputName" className="form-label fs-6 my-3">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="InputName"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                            </div>
+                            <div className="my-3">
+                                <label htmlFor="InputEmail" className="form-label fs-6 my-3">
+                                    Email address
+                                </label>
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="InputEmail"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                            </div>
+                            <div className="my-3">
+                                <label htmlFor="InputPhoneNumber" className="form-label fs-6 my-3">
+                                    Phone Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    className="form-control"
+                                    id="InputPhoneNumber"
+                                    value={phoneNumber}
+                                    onChange={(e) => setPhoneNumber(e.target.value)}
+                                />
+                            </div>
+                            <div className="my-3">
+                                <label htmlFor="InputPassword" className="form-label fs-6 my-3">
+                                    Password
+                                </label>
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    id="InputPassword"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                            </div>
+                            <div className="my-3">
+                                <label htmlFor="InputRole" className="form-label fs-6 my-3">
+                                    User Type
+                                </label>
+                                <select
+                                    className="form-select"
+                                    id="InputRole"
+                                    value={role}
+                                    onChange={handleDropdownChange}
+                                >
+                                    <option value="">Select</option>
+                                    <option value={0}>Farmer</option>
+                                    <option value={1}>Buyer</option>
+                                    {/* Add more options if needed */}
+                                </select>
+                            </div>
+                            <button type="submit" className="btn btn-success rounded-0 form-control">
+                                Sign Up
+                            </button>
+                        </form>
+                        <div className='my-3'>
+                            Already have an Account? <a href='/signIn' className='text-decoration-none text-success fw-bold'>Sign In</a>
                         </div>
-                        <div className="my-3">
-                            <label htmlFor="InputPhoneNumber" className="form-label fs-6 my-3">
-                                Phone Number
-                            </label>
-                            <input
-                                type="tel"
-                                className="form-control"
-                                id="InputPhoneNumber"
-                                value={phoneNumber}
-                                onChange={(e) => setPhoneNumber(e.target.value)}
-                            />
-                        </div>
-                        <div className="my-3">
-                            <label htmlFor="InputPassword" className="form-label fs-6 my-3">
-                                Password
-                            </label>
-                            <input
-                                type="password"
-                                className="form-control"
-                                id="InputPassword"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
-                        </div>
-                        <div className="my-3">
-                            <label htmlFor="InputRole" className="form-label fs-6 my-3">
-                                User Type
-                            </label>
-                            <select
-                                className="form-select"
-                                id="InputRole"
-                                value={role}
-                                onChange={handleDropdownChange}
-                            >
-                                <option value="">Select</option>
-                                <option value={0}>Farmer</option>
-                                <option value={1}>Buyer</option>
-                                {/* Add more options if needed */}
-                            </select>
-                        </div>
-                        <button type="submit" className="btn btn-success rounded-0 form-control">
-                            Sign Up
-                        </button>
-                    </form>
-                    <div className='my-3'>
-                        Already have an Account? <a href='/signIn' className='text-decoration-none text-success fw-bold'>Sign In</a>
                     </div>
                 </div>
             </div >

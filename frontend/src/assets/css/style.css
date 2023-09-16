@@ -17,6 +17,11 @@ a {
     background-color: var(--main-green);
 }
 
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
 .logo-img {
     width: 100px;
     height: 100px;
@@ -31,6 +36,7 @@ a {
 
 .side-bar {
     height: 100vh;
+    z-index: 10;
 }
 
 /* !sidebar */
@@ -117,6 +123,16 @@ li.rounded-2:hover{
     color: #00943c;
 }
 
+.outline-dropdown {
+    width: fit-content;
+    border: 1px solid #00943c !important;
+    background-color: white;
+    color: #00943c;
+    font-weight: 400;
+    font-size: 12px;
+    height: 40px;
+}
+
 .find-contract h2 {
     font-size: 32px;
     font-weight: bold;
@@ -141,7 +157,7 @@ li.rounded-2:hover{
     font-size: 12px;
 }
 
-.form-control:focus {
+.form-control:focus, .form-select:focus {
     box-shadow: 0px 0px 0px 0.25rem rgba(0, 148, 60, 0.25) !important;
 }
 

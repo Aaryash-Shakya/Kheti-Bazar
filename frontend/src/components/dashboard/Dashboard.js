@@ -4,13 +4,109 @@ import Sidebar from './templates/Sidebar'
 
 const Dashboard = () => {
     return (
-        <div className=''>
-            <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-dash" role="tabpanel" aria-labelledby="pills-dash-tab" tabindex="0">
-                        Hi i am here
+        <div className='mx-5'>
+            {/* title */}
+            <div className='fs-3 mb-4 fw-bold'>
+                Dashboard
+            </div>
+            <div>
+                <div className='mb-5'>
+                    <div className=''>
+                        Applied Contracts
                     </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                    Profile
+                    <div className='table'>
+                        <table className='table table-striped'>
+                            <tbody>
+                                <tr>
+                                    <td className='index'>1</td>
+                                    <td className='contract-name'>Contract 1</td>
+                                    <td className='status'>
+                                        <div className='d-flex justify-content-end align-items-center h-100'>
+                                            status
+                                        </div>
+                                    </td>
+                                    <td className='action'>
+                                        <button className='btn btn-light btn-sm'>
+                                            Details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className='index'>1</td>
+                                    <td className='contract-name'>Contract 1</td>
+                                    <td className='status'>
+                                        <div className='d-flex justify-content-end align-items-center h-100'>
+                                            status
+                                        </div>
+                                    </td>
+                                    <td className='action'>
+                                        <button className='btn btn-light btn-sm'>
+                                            Details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className='index'>1</td>
+                                    <td className='contract-name'>Contract 1</td>
+                                    <td className='status'>
+                                        <div className='d-flex justify-content-end align-items-center h-100'>
+                                            status
+                                        </div>
+                                    </td>
+                                    <td className='action'>
+                                        <button className='btn btn-light btn-sm'>
+                                            Details
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div className='mb-5'>
+                    <div className=''>
+                        Contracts Type
+                    </div>
+                    <div className='table'>
+                        <table className='table table-striped'>
+                            <tbody>
+                                <tr>
+                                    <td className='index'>1</td>
+                                    <td className='contract-name'>Contract 1</td>
+                                    <td className='action'>
+                                        <div className='d-flex'>
+                                            <button className='btn btn-light btn-sm'>
+                                                Edit
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className='index'>1</td>
+                                    <td className='contract-name'>Contract 1</td>
+                                    <td className='action'>
+                                        <div className='d-flex'>
+                                            <button className='btn btn-light btn-sm'>
+                                                Edit
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className='index'>1</td>
+                                    <td className='contract-name'>Contract 1</td>
+                                    <td className='action'>
+                                        <div className='d-flex'>
+                                            <button className='btn btn-light btn-sm'>
+                                                Edit
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,22 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import ProfilePicture from '../assets/images/profile-picture.png'
 import News from '../assets/images/News.png'
+import axios from 'axios'
+import { backendUrl } from '../API'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
+    const[userData,setUserData]=useState('')
+    useEffect(()=>{
+        const uid = localStorage.getItem('uid')
+        axios.get(`${backendUrl}/userdetail/${uid}`)
+        .then(user=>{
+            console.log(user);
+            setUserData(user.data)
+            console.log(userData);
+        })
+    },[])   
+
     return (
         <div>
             <div id="profile" className="container-lg ms-lg-4 px-md-5 ms-2 px-2">
@@ -12,26 +26,30 @@ const Profile = () => {
                     </div>
                     <div className="col-lg-6 col-8 d-flex flex-column align-items-start justify-content-center">
                         <p style={{ fontSize: "20px" }}>
-                            <strong className='fw-bold'>Mr. Rajendra Acharya</strong>
-                            <br />Farmer</p>
+                            <strong className='fw-bold'>Mr. {userData.name}</strong>
+                            <br />{userData.role === 0 && 'Farmer'}{userData.role === 1 && 'Buyer'}</p>
                     </div>
                 </div>
                 <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Land and Crops Description</h3>
                 <div className="row g-3">
                     <div className="col-md-8 p-3" style={{ backgroundColor: "#edf8e8" }}>
-                        <p>Land location : </p>
-                        <p>Land Size ( in Sq. Meter ) : </p>
-                        <p>Fertility : </p>
-                        <p>Soil Type : </p>
-                        <p>Main Crops : </p>
+                        <p>Land location : Shantinagar, Kathmandu</p>
+                        <p>Land Size ( in Sq. Meter ) : 250</p>
+                        <p>Fertility : Very High</p>
+                        <p>Soil Type : Fertile</p>
+                        <p>Main Crops : Sugarcane, Wheat</p>
                     </div>
                     <div className="col-md-4 d-flex flex-column align-items-start justify-content-end">
+                        <Link to='/dashboard'>
                         <button className='btn btn-success outline-button'>
                             Check Contract Status
                         </button>
+                        </Link>
+                        <Link to='/contracts'>
                         <button className='btn btn-success contained-button mt-2'>
                             Send Contract
                         </button>
+                        </Link>
                     </div>
                 </div>
                 <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Previous Contracts Testimonials</h3>

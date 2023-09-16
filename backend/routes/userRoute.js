@@ -9,7 +9,7 @@ router.get('/testuser',userTest)
 router.post('/signup',postUser)
 router.post('/signin',signIn)
 router.get('/userlist',userList)
-router.get('/userdetails/:uid',userDetail)
+router.get('/userdetail/:uid',userDetail)
 router.post('/signout',signOut)
 
 module.exports = router

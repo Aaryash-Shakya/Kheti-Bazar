@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react'
 import React, { useEffect } from 'react'
 import News from '../../assets/images/News.png'
+import { Link } from 'react-router-dom';
 const Contract = () => {
     useEffect(() => {
         const setActive = () =>{
@@ -20,19 +21,21 @@ const Contract = () => {
                     <div className="col-lg-3 col-md-6">
                         <div className="card border border-success rounded-3 overflow-hidden mx-2">
                             <img className='w-100 object-fit-cover' src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3755706.jpg&fm=jpg" alt="" />
-                            <a href='/createContract' className=' my-3 mx-auto'>
+                                <Link to='/createcontract' className='my-3 mx-auto'>
                                 <button className='outline-button btn btn-success'>
                                     Create Contracts
                                 </button>
-                            </a>
+                                </Link>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className="card border border-success rounded-3 overflow-hidden mx-2">
                             <img className='w-100 object-fit-cover ' src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3755706.jpg&fm=jpg" alt="" />
-                            <button className='outline-button btn btn-success my-3 mx-auto'>
+                            <Link to="/proposedcontract" className='my-3 mx-auto'>
+                            <button className='outline-button btn btn-success'>
                                 Edit Contracts
                             </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-5">
@@ -41,10 +44,12 @@ const Contract = () => {
                             <p className=''>
                                 Contracts: Your Path to Growth and Success. Seize the Opportunity, Ink the Deal, Reap the Rewards.Embrace contracts as the foundation of collaboration, trust, and progress. Seize the pen and let it ink your journey towards success, one contract at a time. Your commitment today is the harvest of prosperity tomorrow
                             </p>
+                            <Link to='/findcontracts'>
                             <button className="find-contracts-btn btn btn-success w-50 py-3">
                                 Find Contracts
                                 <Icon icon="ph:bag-fill" className='ms-2' />
                             </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-1"></div>

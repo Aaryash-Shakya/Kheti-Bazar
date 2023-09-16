@@ -46,7 +46,7 @@ const SignUpForm = () => {
             //         console.log(data);
             //     })
             //     .catch(err => console.log(err))
-            axios.post('http://localhost:3000/api/signup',formData)
+            axios.post(`${process.env.BACKEND_URL}api/signup`,formData)
                 .then(data => {
                     console.log(data);
                 })

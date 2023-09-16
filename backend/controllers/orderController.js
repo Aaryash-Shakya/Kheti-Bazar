@@ -15,7 +15,7 @@ exports.postOrder = async (req, res) => {
   })
   order = await order.save()
   if (!order) {
-    return res.status(400).json({ error: 'something went wrong while creating your account' })
+    return res.status(400).json({ error: 'something went wrong while creating your order' })
   }
   res.send(order)
 }
@@ -40,4 +40,21 @@ exports.orderNotComplete = async (req, res) => {
     return res.status(500).json({ error: 'failed to update status' })
   }
   return res.status(200).json({ msg: "set order status: not-completed" })
+}
+
+exports.orderList = async (req, res) => {
+  const order = await Order.find()
+  if (!order) {
+    return res.status(404).json({ error: 'something went wrong' })
+  }
+  res.send(order)
+}
+
+exports.orderDetail = async (req, res) => {
+  let order = await Order.findById(req.params.oid)
+    .populate('crop')
+  if (!order) {
+    return res.status(404).json({ error: 'something went wrong' })
+  }
+  res.send(order)
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Topbar from './Topbar';
 
 // import iconify for icons
 import { Icon } from '@iconify/react';
@@ -20,16 +19,16 @@ const Navbar = () => {
                     </div>
                     <ul class="nav nav-pills flex-column mb-auto ">
                         <li>
-                            <a href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  ">
+                            <button class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center active"   id="pills-dash-tab" data-bs-toggle="pill" data-bs-target="#pills-dash" type="button" role="tab" aria-controls="pills-dash" aria-selected="true">
                                 <Icon icon="ri:dashboard-fill" className='pe-1' />
                                 Dashboard
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  ">
+                            <button href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
                                 <Icon icon="mdi:file-document-edit" className='pe-1' />
                                 Contracts
-                            </a>
+                            </button>
                         </li>
                         <li>
                             <a href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  ">

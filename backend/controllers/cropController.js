@@ -11,7 +11,7 @@ exports.cropList = async (req, res) => {
 
 // crop details
 exports.cropDetail = async (req, res) => {
-  const crop = await Crop.findById(req.params.uid)
+  const crop = await Crop.findById(req.params.cid)
   if (!crop) {
     return res.status(404).json({ error: 'something went wrong' })
   }

@@ -9,6 +9,7 @@ const morgan = require('morgan')
 
 const userRoute = require('./routes/userRoute')
 const cropRoute = require('./routes/cropRoute')
+const orderRoute = require('./routes/orderRoute')
 
 // middleware
 app.use(morgan('dev'))
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 })
 app.use('/api',userRoute)
 app.use('/api',cropRoute)
+app.use('/api',orderRoute)
 
 
 

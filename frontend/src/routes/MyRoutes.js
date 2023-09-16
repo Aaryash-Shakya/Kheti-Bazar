@@ -16,6 +16,7 @@ import Profile from '../components/Profile'
 import SignInForm from '../components/SignInForm'
 import SignUpForm from '../components/SignUpForm'
 
+import CreateContractForm from '../components/dashboard/forms/CreateContractForm'
 
 const MyRoutes = () => {
     return (
@@ -30,6 +31,8 @@ const MyRoutes = () => {
                     <Route path="/findContracts" element={<FindContract />} />
                     <Route path="/contractDetails" element={<ContractDetails />} />
                     <Route path="/profile" element={<Profile />} />
+                    <Route path="/createContract" element={<CreateContractForm />} />
+
                 </Route>
             </Routes>
 

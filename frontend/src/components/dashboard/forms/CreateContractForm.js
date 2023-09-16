@@ -56,17 +56,15 @@ const CreateContractForm = () => {
     };
 
     return (
-        <div className='container'>
-            <div className='mb-4 fw-bold' style={{ fontSize: "20px" }}>
-                Create Contract
-            </div>
+        <div className='container ms-lg-4 px-md-5 ms-2 px-2'>
+            <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Create Contract</h3>
             <div>
                 <form onSubmit={handleSubmit}>
                     <div className='mb-3'>
                         <div className="row">
                             <div className="col-lg-6 col-sm-12">
                                 <label htmlFor="contractorName" className='form-label text-secondary' required>
-                                    Enter Contractor Name <span className='text-danger ms-2'>*</span>
+                                    Enter Contractor Name <span className='text-danger ms-1'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -79,7 +77,7 @@ const CreateContractForm = () => {
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <label htmlFor="itemNeeded" className='form-label text-secondary' required>
-                                    Item Needed<span className='text-danger ms-2'>*</span>
+                                    Item Needed<span className='text-danger ms-1'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -96,7 +94,7 @@ const CreateContractForm = () => {
                         <div className="row">
                             <div className="col-lg-6 col-sm-12">
                                 <label htmlFor="itemQuality" className='form-label text-secondary' required>
-                                    Quality <span className='text-danger ms-2'>*</span>
+                                    Quality <span className='text-danger ms-1'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -109,7 +107,7 @@ const CreateContractForm = () => {
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <label htmlFor="itemQuantity" className='form-label text-secondary' required>
-                                    Quantity <span className='text-danger ms-2'>*</span>
+                                    Quantity <span className='text-danger ms-1'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -126,7 +124,7 @@ const CreateContractForm = () => {
                         <div className="row">
                             <div className="col-lg-6 col-sm-12">
                                 <label htmlFor="perPrice" className='form-label text-secondary' required>
-                                    Price for Each <span className='text-danger ms-2'>*</span>
+                                    Price for Each <span className='text-danger ms-1'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -139,7 +137,7 @@ const CreateContractForm = () => {
                             </div>
                             <div className="col-lg-6 col-sm-12">
                                 <label htmlFor="totalPrice" className='form-label text-secondary' required>
-                                    Total Price <span className='text-danger ms-2'>*</span>
+                                    Total Price <span className='text-danger ms-1'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -154,7 +152,7 @@ const CreateContractForm = () => {
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="issueDate" className='form-label text-secondary' required>
-                            Issue Date <span className='text-danger ms-2'>*</span>
+                            Issue Date <span className='text-danger ms-1'>*</span>
                         </label>
                         <input
                             type="date"

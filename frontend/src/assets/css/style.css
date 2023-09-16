@@ -17,9 +17,10 @@ a {
   background-color: var(--main-green);
 }
 
-img {
-  max-width: 100%;
-  object-fit: contain;
+.signup-img{
+    max-width: 80%;
+    object-fit: contain;
+    margin-left:10%;
 }
 
 .logo-img {
@@ -47,8 +48,9 @@ img {
 li.rounded-2 {
   border: 1px solid transparent;
 }
-li.rounded-2:hover {
-  border: 1px solid white;
+li.rounded-2:hover{
+    border: 1px solid white;
+    color: white !important;
 }
 /* md */
 @media screen and (min-width: 768px) {
@@ -78,8 +80,8 @@ li.rounded-2:hover {
   left: 20px;
   z-index: 99;
 }
-.active-border {
-  border: 1px solid white;
+.active-border{
+    border: 1px solid white !important;
 }
 /* else */
 /* @media screen and (max-width: 575px){ 
@@ -93,13 +95,13 @@ li.rounded-2:hover {
 
 /* ! Contract */
 .outline-button {
-  width: fit-content;
-  border: 1px solid #00943c;
-  background-color: white;
-  color: #00943c;
-  font-weight: 400;
-  font-size: 12px;
-  height: 40px;
+    width: fit-content;
+    border: 1px solid #00943c;
+    background-color: white;
+    color: #00943c;
+    font-weight: 400;
+    font-size: 16px;
+    height: 40px;
 }
 
 .outline-button:hover {
@@ -109,13 +111,13 @@ li.rounded-2:hover {
 }
 
 .contained-button {
-  width: fit-content;
-  border: 1px solid white;
-  background-color: #00943c;
-  color: white;
-  font-weight: 400;
-  font-size: 12px;
-  height: 40px;
+    width: fit-content;
+    border: 1px solid white;
+    background-color: #00943c;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    height: 40px;
 }
 
 .contained-button:hover {

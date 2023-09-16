@@ -3,9 +3,8 @@ const Contract = require("../models/contractModel");
 // to create Order
 exports.postContract = async (req, res) => {
   // get data from req body and assign in the object. THis obj is sent to db
-  let currentDate = new Date()
-  const specificDate = new Date('2023-09-16');
   let contract = new Contract({
+    name: req.body.name,
     order: req.body.order,
     farmer_id: req.body.farmer_id,
     buyer_id: req.body.buyer_id,

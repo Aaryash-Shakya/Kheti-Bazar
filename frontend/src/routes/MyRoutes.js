@@ -36,6 +36,7 @@ const MyRoutes = () => {
                     <Route path="/createContract" element={<CreateContractForm />} />
                     <Route path="/appointmentForm" element={<AppointmentForm />} />
                     <Route path="/proposedContract" element={<ProposedContract />} />
+                    <Route path="/contractDetails" element={<ContractDetails />} />
                 </Route>
             </Routes>
 

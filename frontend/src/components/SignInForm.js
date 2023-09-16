@@ -39,6 +39,7 @@ const SignInForm = () => {
                 // Handle a successful response here
                 const data = await response.json();
                 console.log(data);
+                // send kyc msg
             } else {
                 // Handle errors here
                 console.error('Error:', response.status);
@@ -54,31 +55,29 @@ const SignInForm = () => {
         <div className='container'>
             <div className='row align-items-center' style={{ height: "100vh" }}>
                 <div className='col-lg-6 col-sm-12'>
-                    <img src={Logo} alt='logo' />
+                    <img className='signup-img' src={Logo} alt='logo' />
                 </div>
-                <div className='col-lg-6 col-sm-12 bg-light p-5 border border-secondary-subtle rounded-2' >
+                <div className='col-lg-5 col-sm-12 bg-light p-5 border border-secondary-subtle rounded-2' >
                     <div className='fs-3'>
                         Welcome !
                     </div>
                     <form id="loginForm" onSubmit={handleSubmit}>
-                        <div className="my-3">
-                            <label htmlFor="InputRole" className="form-label fs-6 my-3">
+                        <div className="my-2">
+                            <label htmlFor="InputRole" className="form-label fs-6 mb-1">
                                 Type
                             </label>
-                            <div className="dropdown">
-                                <select
-                                    className=" outline-dropdown form-select fs-6"
-                                    value={role}
-                                    onChange={handleDropdownChange}
-                                >
-                                    <option value="" disabled selected>Select</option>
-                                    <option value={0}>Farmer</option>
-                                    <option value={1}>Buyer</option>
-                                </select>
-                            </div>
+                            <select
+                                className=" outline-dropdown form-select fs-6"
+                                value={role}
+                                onChange={handleDropdownChange}
+                            >
+                                <option value="" disabled selected>Select</option>
+                                <option value={0}>Farmer</option>
+                                <option value={1}>Buyer</option>
+                            </select>
                         </div>
                         <div className="my-3">
-                            <label htmlFor="InputEmail1" className="form-label fs-6 my-3">
+                            <label htmlFor="InputEmail1" className="form-label fs-6 mb-1">
                                 Email address
                             </label>
                             <input
@@ -90,7 +89,7 @@ const SignInForm = () => {
                             />
                         </div>
                         <div className="my-3">
-                            <label htmlFor="InputPassword" className="form-label fs-6 my-3">
+                            <label htmlFor="InputPassword" className="form-label fs-6 mb-1">
                                 Password
                             </label>
                             <input

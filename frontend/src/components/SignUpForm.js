@@ -59,7 +59,7 @@ const SignUpForm = () => {
             <div className='container'>
                 <div className='row align-items-center' style={{ height: "100vh" }}>
                     <div className='col-lg-6 col-sm-12'>
-                        <img src={Logo} alt='Logo' />
+                        <img className='signup-img' src={Logo} alt='Logo' />
                     </div>
                     <div className='col-lg-6 col-sm-12 p-5 bg-light  border border-secondary-subtle rounded-2' >
                         <div className='fs-3'>
@@ -67,7 +67,7 @@ const SignUpForm = () => {
                         </div>
                         <form id="signupForm" onSubmit={handleSubmit}>
                             <div className="my-3">
-                                <label htmlFor="InputName" className="form-label fs-6 my-3">
+                                <label htmlFor="InputName" className="form-label fs-6 mb-1">
                                     Name
                                 </label>
                                 <input
@@ -79,7 +79,7 @@ const SignUpForm = () => {
                                 />
                             </div>
                             <div className="my-3">
-                                <label htmlFor="InputEmail" className="form-label fs-6 my-3">
+                                <label htmlFor="InputEmail" className="form-label fs-6 mb-1">
                                     Email address
                                 </label>
                                 <input
@@ -91,7 +91,7 @@ const SignUpForm = () => {
                                 />
                             </div>
                             <div className="my-3">
-                                <label htmlFor="InputPhoneNumber" className="form-label fs-6 my-3">
+                                <label htmlFor="InputPhoneNumber" className="form-label fs-6 mb-1">
                                     Phone Number
                                 </label>
                                 <input
@@ -103,7 +103,7 @@ const SignUpForm = () => {
                                 />
                             </div>
                             <div className="my-3">
-                                <label htmlFor="InputPassword" className="form-label fs-6 my-3">
+                                <label htmlFor="InputPassword" className="form-label fs-6 mb-1">
                                     Password
                                 </label>
                                 <input
@@ -115,7 +115,7 @@ const SignUpForm = () => {
                                 />
                             </div>
                             <div className="my-3">
-                                <label htmlFor="InputRole" className="form-label fs-6 my-3">
+                                <label htmlFor="InputRole" className="form-label fs-6 mb-1">
                                     User Type
                                 </label>
                                 <select

@@ -61,7 +61,7 @@ const SignInForm = () => {
                 </div>
                 <form id="loginForm" onSubmit={handleSubmit}>
                     <div className="my-3">
-                        <label htmlFor="InputRole" className="form-label fs-5 my-3">
+                        <label htmlFor="InputRole" className="form-label fs-6 my-3">
                             Type
                         </label>
                         <div className="dropdown">
@@ -77,7 +77,7 @@ const SignInForm = () => {
                         </div>
                     </div>
                     <div className="my-3">
-                        <label htmlFor="InputEmail1" className="form-label fs-5 my-3">
+                        <label htmlFor="InputEmail1" className="form-label fs-6 my-3">
                             Email address
                         </label>
                         <input
@@ -89,7 +89,7 @@ const SignInForm = () => {
                         />
                     </div>
                     <div className="my-3">
-                        <label htmlFor="InputPassword" className="form-label fs-5 my-3">
+                        <label htmlFor="InputPassword" className="form-label fs-6 my-3">
                             Password
                         </label>
                         <input

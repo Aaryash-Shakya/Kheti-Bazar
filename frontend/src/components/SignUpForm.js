@@ -66,7 +66,7 @@ const SignUpForm = () => {
                     </div>
                     <form id="signupForm" onSubmit={handleSubmit}>
                         <div className="my-3">
-                            <label htmlFor="InputName" className="form-label fs-5 my-3">
+                            <label htmlFor="InputName" className="form-label fs-6 my-3">
                                 Name
                             </label>
                             <input
@@ -78,7 +78,7 @@ const SignUpForm = () => {
                             />
                         </div>
                         <div className="my-3">
-                            <label htmlFor="InputEmail" className="form-label fs-5 my-3">
+                            <label htmlFor="InputEmail" className="form-label fs-6 my-3">
                                 Email address
                             </label>
                             <input
@@ -90,7 +90,7 @@ const SignUpForm = () => {
                             />
                         </div>
                         <div className="my-3">
-                            <label htmlFor="InputPhoneNumber" className="form-label fs-5 my-3">
+                            <label htmlFor="InputPhoneNumber" className="form-label fs-6 my-3">
                                 Phone Number
                             </label>
                             <input
@@ -102,7 +102,7 @@ const SignUpForm = () => {
                             />
                         </div>
                         <div className="my-3">
-                            <label htmlFor="InputPassword" className="form-label fs-5 my-3">
+                            <label htmlFor="InputPassword" className="form-label fs-6 my-3">
                                 Password
                             </label>
                             <input
@@ -114,7 +114,7 @@ const SignUpForm = () => {
                             />
                         </div>
                         <div className="my-3">
-                            <label htmlFor="InputRole" className="form-label fs-5 my-3">
+                            <label htmlFor="InputRole" className="form-label fs-6 my-3">
                                 User Type
                             </label>
                             <select

@@ -7,7 +7,6 @@ const morgan = require('morgan')
 
 
 
-const fruitRoute = require('./routes/fruitRoute')
 const userRoute = require('./routes/userRoute')
 
 // middleware
@@ -18,7 +17,6 @@ app.use(express.json())
 app.get('/', (req, res) => {
   res.send('express works')
 })
-app.use('/api',fruitRoute)
 app.use('/api',userRoute)
 
 

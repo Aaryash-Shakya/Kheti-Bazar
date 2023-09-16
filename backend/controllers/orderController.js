@@ -41,3 +41,20 @@ exports.orderNotComplete = async (req, res) => {
   }
   return res.status(200).json({ msg: "set order status: not-completed" })
 }
+
+exports.orderList = async (req, res) => {
+  const order = await Order.find()
+  if (!order) {
+    return res.status(404).json({ error: 'something went wrong' })
+  }
+  res.send(order)
+}
+
+exports.orderDetail = async (req, res) => {
+  let order = await Order.findById(req.params.oid)
+    .populate('crop')
+  if (!order) {
+    return res.status(404).json({ error: 'something went wrong' })
+  }
+  res.send(order)
+}

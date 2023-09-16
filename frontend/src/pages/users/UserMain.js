@@ -12,11 +12,11 @@ import Dashboard from '../../components/dashboard/Dashboard'
 const UserMain = () => {
     return (
         <div>
-            <div className='row mw-100'>
-                <div className='col-2'>
+            <div className='row mw-100 gx-0'>
+                <div className='sidebar-container' style={{width:"20%"}}>
                     <Sidebar />
                 </div>
-                <div className='col-10'>
+                <div className='content-container' style={{width:"80%"}}>
                     <div>
                         <Topbar />
                     </div>

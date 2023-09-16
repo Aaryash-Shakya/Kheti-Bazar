@@ -11,7 +11,8 @@ exports.postOrder = async (req, res) => {
     price: req.body.price,
     issued_date: currentDate,
     deadline_date: specificDate,
-    terms: req.body.terms
+    terms: req.body.terms,
+    location: req.body.location
   })
   order = await order.save()
   if (!order) {

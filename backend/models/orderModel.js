@@ -35,6 +35,11 @@ const orderSchema = new mongoose.Schema({
     type:Boolean,
     required: true,
     default: false
+  },
+  location:{
+    type:String,
+    required:true,
+    trim:true
   }
 },{
   timestamps:true

@@ -1,7 +1,15 @@
 import { Icon } from '@iconify/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import News from '../../assets/images/News.png'
 const Contract = () => {
+    useEffect(() => {
+        const setActive = () =>{
+            document.getElementById('contractBorder').classList.add('active-border')
+        }
+        setTimeout(() => { 
+            setActive();
+        }, 100);
+    });
     return (
         <div>
             <div className="px-4 container mw-100">
@@ -12,9 +20,11 @@ const Contract = () => {
                     <div className="col-lg-3 col-md-6">
                         <div className="card border border-success rounded-3 overflow-hidden mx-2">
                             <img className='w-100 object-fit-cover' src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3755706.jpg&fm=jpg" alt="" />
-                            <button className='outline-button btn btn-success my-3 mx-auto'>
-                                Create Contracts
-                            </button>
+                            <a href='/createContract' className=' my-3 mx-auto'>
+                                <button className='outline-button btn btn-success'>
+                                    Create Contracts
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
@@ -57,7 +67,7 @@ const Contract = () => {
                             </p>
                             <p>
                                 Overall, the Agribusiness Promotion Bill has the potential to significantly boost the agricultural sector in Nepal by attracting private investment, ensuring market access for farmers, and providing legal frameworks for contract farming.
-                                
+
                             </p>
                             <p id='readmore-extra1' className='collapse'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet nesciunt nam asperiores ea tempore libero, provident perferendis voluptatibus earum magnam quo eum totam facilis, maiores architecto sint quod! Illo?

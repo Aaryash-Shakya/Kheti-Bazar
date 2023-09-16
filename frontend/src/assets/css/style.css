@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
 * {
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --main-green: #00943c;
 }
@@ -13,6 +15,12 @@ a {
 
 .main-green {
   background-color: var(--main-green);
+}
+
+.signup-img{
+    max-width: 80%;
+    object-fit: contain;
+    margin-left:10%;
 }
 
 .logo-img {
@@ -29,29 +37,51 @@ a {
 
 .side-bar {
   height: 100vh;
+  z-index: 10;
 }
 
 /* !sidebar */
-/* lg */
-.sidebar-button{
-    display: none;
+
+.sidebar-button {
+  display: none;
 }
-@media screen and (min-width: 992px){ 
-    .sidebar-container,.side-bar{
-        width: 20%;
-    }
-    .content-container{
-        width: 80%;
-    }
+li.rounded-2 {
+  border: 1px solid transparent;
+}
+li.rounded-2:hover{
+    border: 1px solid white;
+    color: white !important;
 }
 /* md */
-@media screen and (min-width: 576px){ 
-    .sidebar-container,.side-bar{
-        width: 25%;
-    }
-    .content-container{
-        width: 75%;
-    }
+@media screen and (min-width: 768px) {
+  .sidebar-container,
+  .side-bar {
+    width: 20%;
+  }
+
+  .content-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sidebar-container,
+  .side-bar {
+    width: 60%;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+}
+
+#sidebarToggleBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 99;
+}
+.active-border{
+    border: 1px solid white !important;
 }
 /* else */
 /* @media screen and (max-width: 575px){ 
@@ -61,50 +91,114 @@ a {
     .content-container{
         width: 100%;
     }
-    .sidebar-button{
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
 } */
 
 /* ! Contract */
-.outline-button{
+.outline-button {
     width: fit-content;
     border: 1px solid #00943c;
     background-color: white;
     color: #00943c;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     height: 40px;
 }
-.contained-button {
-  width: fit-content;
+
+.outline-button:hover {
   border: 1px solid white;
   background-color: #00943c;
   color: white;
+}
+
+.contained-button {
+    width: fit-content;
+    border: 1px solid white;
+    background-color: #00943c;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    height: 40px;
+}
+
+.contained-button:hover {
+  background-color: white;
+
+  border: 1px solid #00943c;
+  color: #00943c;
+}
+
+.outline-dropdown {
+  width: fit-content;
+  border: 1px solid #00943c !important;
+  background-color: white;
+  color: #00943c;
   font-weight: 400;
   font-size: 12px;
   height: 40px;
 }
 
-.contained-button:hover {
-  border: 1px solid #00943c;
-  color: #00943c;
-}
 .find-contract h2 {
   font-size: 32px;
   font-weight: bold;
 }
+
 .find-contract p {
   font-size: 14px;
 }
+
 .find-contract button {
   font-size: 16px;
   background-color: #00943c;
 }
 
-.news-container{
-    font-size: 12px;
+.news-container {
+  font-size: 12px;
+  background-color: rgb(0, 148, 60);
+}
+
+.news-container {
+  font-size: 12px;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-select:focus {
+  box-shadow: 0px 0px 0px 0.25rem rgba(0, 148, 60, 0.25) !important;
+}
+
+/* ! profile */
+#profile {
+  margin-bottom: 5rem;
+}
+#profile .profile-pic-container {
+  overflow: clip;
+}
+
+#profile .profile-pic-container img {
+  width: 100%;
+}
+#profile .testimonial-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+#profile .logo-holder {
+  padding: 1.5rem;
+  width: 50%;
+  overflow: clip;
+}
+#profile .logo-holder img {
+  width: 100%;
+}
+#profile .text-holder {
+  padding: 1rem;
+  width: 50%;
+}
+
+/* ! seller contract */
+
+.seller-contract p {
+  margin: 0;
 }

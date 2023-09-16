@@ -1,8 +1,14 @@
-import React from 'react'
-
-import Sidebar from './templates/Sidebar'
+import React,{useEffect} from 'react'
 
 const Dashboard = () => {
+    useEffect(() => {
+        const setActive = () =>{
+            document.getElementById('dashboardBorder').classList.add('active-border')
+        }
+        setTimeout(() => { 
+            setActive();
+        }, 100);
+    });
     return (
         <div className='mx-5'>
             {/* title */}

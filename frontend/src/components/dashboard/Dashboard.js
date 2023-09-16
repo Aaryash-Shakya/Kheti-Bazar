@@ -1,7 +1,5 @@
 import React,{useEffect} from 'react'
 
-import Sidebar from './templates/Sidebar'
-
 const Dashboard = () => {
     useEffect(() => {
         const setActive = () =>{

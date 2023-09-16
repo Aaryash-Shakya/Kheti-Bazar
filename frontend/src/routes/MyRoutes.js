@@ -10,13 +10,20 @@ import Dashboard from '../components/dashboard/Dashboard'
 import Contract from '../components/dashboard/Contract'
 import FindContract from '../components/dashboard/FindContract'
 import ContractDetails from '../components/dashboard/ContractDetails'
+
 import Profile from '../components/Profile'
+
+import SignInForm from '../components/SignInForm'
+import SignUpForm from '../components/SignUpForm'
+
 
 const MyRoutes = () => {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
+                <Route path="/signIn" element={<SignInForm />} />
+                <Route path="/signUp" element={<SignUpForm />} />
                 <Route path="" element={<UserNav />} >
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/contracts" element={<Contract />} />

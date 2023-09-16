@@ -34,6 +34,7 @@ a {
 }
 
 /* !sidebar */
+
 .sidebar-button {
     display: none;
 }
@@ -60,6 +61,7 @@ li.rounded-2:hover{
     .content-container {
         width: 100%;
     }
+
 }
 
 #sidebarToggleBtn{
@@ -125,12 +127,24 @@ li.rounded-2:hover{
 }
 
 .find-contract button {
+
     font-size: 16px;
     background-color: #00943c;
 }
 
 .news-container {
     font-size: 12px;
+    background-color: rgb(0, 148, 60);
+}
+
+.news-container {
+    font-size: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 0px 0.25rem rgba(0, 148, 60, 0.25) !important;
+}
+
 }
 
 /* ! profile */

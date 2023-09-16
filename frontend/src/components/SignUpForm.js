@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import axios from 'axios'
 import Logo from "../assets/images/Logo.png"
-import { backendUrl } from '../API'
+import { backendUrl } from '../Api'
 import { useNavigate } from 'react-router-dom'
 
 const SignUpForm = () => {
@@ -48,7 +48,7 @@ const SignUpForm = () => {
             //         console.log(data);
             //     })
             //     .catch(err => console.log(err))
-            axios.post('${backendUrl}/api/signup', formData)
+            axios.post(`${backendUrl}/signup`, formData)
                 .then(data => {
                     console.log(data);
                     navigate('/signIn')

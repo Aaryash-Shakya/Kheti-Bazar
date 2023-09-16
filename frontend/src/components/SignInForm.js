@@ -33,7 +33,7 @@ const SignInForm = () => {
         };
 
         try {
-            axios.post(`${backendUrl}api/signin`, formData)
+            axios.post(`${backendUrl}/signin`, formData)
                 .then(data => {
                     navigate('/profile')
                     localStorage.setItem('uid', data.data.user._id)

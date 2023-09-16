@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import ProfilePicture from '../assets/images/profile-picture.png'
 import News from '../assets/images/News.png'
 import axios from 'axios'
-import { backendUrl } from '../API'
+import { backendUrl } from '../Api'
 import { Link } from 'react-router-dom'
 
 const Profile = () => {
@@ -11,11 +11,10 @@ const Profile = () => {
         const uid = localStorage.getItem('uid')
         axios.get(`${backendUrl}/userdetail/${uid}`)
         .then(user=>{
-            console.log(user);
+            console.log(user.data);
             setUserData(user.data)
-            console.log(userData);
         })
-    },[])   
+    },[ ])   
 
     return (
         <div>

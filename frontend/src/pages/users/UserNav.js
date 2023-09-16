@@ -1,16 +1,11 @@
 import React from 'react'
 
-
 import Sidebar from '../../components/dashboard/templates/Sidebar'
 import Topbar from '../../components/dashboard/templates/Topbar'
-
-import Contract from '../../components/dashboard/Contract'
-
-import Dashboard from '../../components/dashboard/Dashboard'
-import FindContract from '../../components/dashboard/FindContract'
+import { Outlet } from 'react-router-dom'
 
 
-const UserMain = () => {
+const UserNav = () => {
     return (
         <div>
             <div className='row mw-100'>
@@ -21,7 +16,7 @@ const UserMain = () => {
                     <div>
                         <Topbar />
                     </div>
-                    <div class="tab-content" id="pills-tabContent">
+                    {/* <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-dash" role="tabpanel" aria-labelledby="pills-dash-tab" tabindex="0">
                             <Dashboard />
                         </div>
@@ -31,7 +26,8 @@ const UserMain = () => {
                         <div class="tab-pane fade" id="pills-findContract" role="tabpanel" aria-labelledby="pills-findContract-tab" tabindex="0">
                             <FindContract />
                         </div>
-                    </div>
+                    </div> */}
+                    <Outlet />
                 </div>
 
             </div>
@@ -39,4 +35,4 @@ const UserMain = () => {
     )
 }
 
-export default UserMain
+export default UserNav

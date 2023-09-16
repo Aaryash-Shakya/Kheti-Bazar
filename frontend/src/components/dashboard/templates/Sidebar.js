@@ -19,27 +19,33 @@ const Navbar = () => {
                     </div>
                     <ul class="nav nav-pills flex-column mb-auto ">
                         <li>
-                            <button class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center active"   id="pills-dash-tab" data-bs-toggle="pill" data-bs-target="#pills-dash" type="button" role="tab" aria-controls="pills-dash" aria-selected="true">
-                                <Icon icon="ri:dashboard-fill" className='pe-1' />
-                                Dashboard
-                            </button>
+                            <a href='/dashboard'>
+                                <button class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center active" id="pills-dash-tab" data-bs-toggle="pill" data-bs-target="#pills-dash" type="button" role="tab" aria-controls="pills-dash" aria-selected="true">
+                                    <Icon icon="ri:dashboard-fill" className='pe-1' />
+                                    Dashboard
+                                </button>
+                            </a>
                         </li>
                         <li>
-                            <button href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  " id="pills-contract-tab" data-bs-toggle="pill" data-bs-target="#pills-contract" type="button" role="tab" aria-controls="pills-contract" aria-selected="false">
-                                <Icon icon="mdi:file-document-edit" className='pe-1' />
-                                Contracts
-                            </button>
+                            <a href='/contracts'>
+                                <button class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center  " id="pills-contract-tab" data-bs-toggle="pill" data-bs-target="#pills-contract" type="button" role="tab" aria-controls="pills-contract" aria-selected="false">
+                                    <Icon icon="mdi:file-document-edit" className='pe-1' />
+                                    Contracts
+                                </button>
+                            </a>
                         </li>
                         <li>
-                            <a href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  ">
+                            <a href="/" class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center  ">
                                 <Icon icon="ic:outline-analytics" className='pe-1' />
                                 Analytics
                             </a>
                         </li>
                         <li>
-                            <a href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  ">
+                            <a href='/findContracts'>
+                            <button class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center  " id="pills-findContract-tab" data-bs-toggle="pill" data-bs-target="#pills-findContract" type="button" role="tab" aria-controls="pills-findContract" aria-selected="false">
                                 <Icon icon="basil:bag-outline" className='pe-1' />
                                 Find Contracts
+                            </button>
                             </a>
                         </li>
                     </ul>

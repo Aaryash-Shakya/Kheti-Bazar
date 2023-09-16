@@ -9,10 +9,12 @@ const UserNav = () => {
     return (
         <div>
             <div className='row mw-100'>
-                <div  style={{width:"20%"}}>
+
+                <div className='sidebar-container' id='sidebarContainer'>
                     <Sidebar />
                 </div>
-                <div style={{width:"80%"}}>
+                <div className='content-container'>
+
                     <div>
                         <Topbar />
                     </div>

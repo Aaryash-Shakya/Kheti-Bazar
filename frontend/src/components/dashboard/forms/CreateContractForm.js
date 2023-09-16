@@ -2,7 +2,7 @@ import React from 'react'
 
 const CreateContractForm = () => {
     return (
-        <div>
+        <div className='container'>
             <div className='fs-3 mb-4 fw-bold'>
                 Create Contract
             </div>

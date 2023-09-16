@@ -10,8 +10,12 @@ import Dashboard from '../components/dashboard/Dashboard'
 import Contract from '../components/dashboard/Contract'
 import FindContract from '../components/dashboard/FindContract'
 import ContractDetails from '../components/dashboard/ContractDetails'
+
+import Profile from '../components/Profile'
+
 import SignInForm from '../components/SignInForm'
 import SignUpForm from '../components/SignUpForm'
+
 import CreateContractForm from '../components/dashboard/forms/CreateContractForm'
 
 const MyRoutes = () => {
@@ -26,6 +30,7 @@ const MyRoutes = () => {
                     <Route path="/contracts" element={<Contract />} />
                     <Route path="/findContracts" element={<FindContract />} />
                     <Route path="/contractDetails" element={<ContractDetails />} />
+                    <Route path="/profile" element={<Profile />} />
                     <Route path="/createContract" element={<CreateContractForm />} />
 
                 </Route>

@@ -4,17 +4,17 @@ import React from 'react'
 import { Icon } from '@iconify/react';
 
 // import of images
-import Logo from '../../../assets/images/White Logo.png'
+import Logo from '../../../assets/images/white-logo.png'
 
 
 const Navbar = () => {
     return (
         <div>
             <div>
-                <div className='side-bar bg-success d-flex justify-content-center flex-column align-items-center'>
+                <div className='side-bar bg-success d-flex justify-content-center flex-column align-items-center position-fixed left-0 top-0' style={{width:"20%"}} >
                     <div className='mb-5'>
                         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none w-100">
-                            <img src={Logo} alt='Logo' />
+                            <img className='mx-auto mt-3 w-75 object-fit-cover' src={Logo} alt='Logo' />
                         </a>
                     </div>
                     <ul class="nav nav-pills flex-column mb-auto ">

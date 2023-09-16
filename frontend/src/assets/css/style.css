@@ -31,15 +31,53 @@ a {
   height: 100vh;
 }
 
+/* !sidebar */
+/* lg */
+.sidebar-button{
+    display: none;
+}
+@media screen and (min-width: 992px){ 
+    .sidebar-container,.side-bar{
+        width: 20%;
+    }
+    .content-container{
+        width: 80%;
+    }
+}
+/* md */
+@media screen and (min-width: 576px){ 
+    .sidebar-container,.side-bar{
+        width: 25%;
+    }
+    .content-container{
+        width: 75%;
+    }
+}
+/* else */
+/* @media screen and (max-width: 575px){ 
+    .sidebar-container,.side-bar{
+        width: 80%;
+    }
+    .content-container{
+        width: 100%;
+    }
+    .sidebar-button{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+} */
+
 /* ! Contract */
-.outline-button {
-  width: fit-content;
-  border: 1px solid #00943c;
-  background-color: white;
-  color: #00943c;
-  font-weight: 400;
-  font-size: 12px;
-  height: 40px;
+.outline-button{
+    width: fit-content;
+    border: 1px solid #00943c;
+    background-color: white;
+    color: #00943c;
+    font-weight: 400;
+    font-size: 12px;
+    height: 40px;
 }
 .contained-button {
   width: fit-content;
@@ -65,4 +103,8 @@ a {
 .find-contract button {
   font-size: 16px;
   background-color: #00943c;
+}
+
+.news-container{
+    font-size: 12px;
 }

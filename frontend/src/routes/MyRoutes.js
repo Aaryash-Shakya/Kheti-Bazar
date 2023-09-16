@@ -9,7 +9,7 @@ import UserNav from '../pages/users/UserNav'
 import Dashboard from '../components/dashboard/Dashboard'
 import Contract from '../components/dashboard/Contract'
 import FindContract from '../components/dashboard/FindContract'
-import ContractDetails from '../components/dashboard/ContractDetails'
+import ContractDetails from '../components/dashboard/SellerContract'
 
 import Profile from '../components/Profile'
 
@@ -31,7 +31,7 @@ const MyRoutes = () => {
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/contracts" element={<Contract />} />
                     <Route path="/findContracts" element={<FindContract />} />
-                    <Route path="/contractDetails" element={<ContractDetails />} />
+                    <Route path="/sellerContract" element={<ContractDetails />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/createContract" element={<CreateContractForm />} />
                     <Route path="/appointmentForm" element={<AppointmentForm />} />

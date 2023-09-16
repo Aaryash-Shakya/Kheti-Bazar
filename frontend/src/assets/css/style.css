@@ -1,86 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --main-green: #00943c;
+  --main-green: #00943c;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-green {
-    background-color: var(--main-green);
+  background-color: var(--main-green);
 }
 
-img{
-    max-width: 100%;
-    object-fit: contain;
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .logo-img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
 }
 
 .back-black {
-    background-color: #000000;
-    height: 70vh;
+  background-color: #000000;
+  height: 70vh;
 }
 
 .side-bar {
-    height: 100vh;
-    z-index: 10;
+  height: 100vh;
+  z-index: 10;
 }
 
 /* !sidebar */
 
 .sidebar-button {
-    display: none;
+  display: none;
 }
-li.rounded-2{
-    border: 1px solid transparent;
+li.rounded-2 {
+  border: 1px solid transparent;
 }
-li.rounded-2:hover{
-    border: 1px solid white;
+li.rounded-2:hover {
+  border: 1px solid white;
 }
 /* md */
 @media screen and (min-width: 768px) {
-    .sidebar-container,
-    .side-bar {
-        width: 20%;
-    }
+  .sidebar-container,
+  .side-bar {
+    width: 20%;
+  }
 
-    .content-container {
-        width: 80%;
-    }
+  .content-container {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 767px) {
-    .sidebar-container,
-    .side-bar {
-        width: 60%;
-    }
+  .sidebar-container,
+  .side-bar {
+    width: 60%;
+  }
 
-    .content-container {
-        width: 100%;
-    }
-
+  .content-container {
+    width: 100%;
+  }
 }
 
-#sidebarToggleBtn{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 99;
+#sidebarToggleBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 99;
 }
-.active-border{
-    border: 1px solid white;
+.active-border {
+  border: 1px solid white;
 }
 /* else */
 /* @media screen and (max-width: 575px){ 
@@ -94,103 +93,110 @@ li.rounded-2:hover{
 
 /* ! Contract */
 .outline-button {
-    width: fit-content;
-    border: 1px solid #00943c;
-    background-color: white;
-    color: #00943c;
-    font-weight: 400;
-    font-size: 12px;
-    height: 40px;
+  width: fit-content;
+  border: 1px solid #00943c;
+  background-color: white;
+  color: #00943c;
+  font-weight: 400;
+  font-size: 12px;
+  height: 40px;
 }
 
 .outline-button:hover {
-    border: 1px solid white;
-    background-color: #00943c;
-    color: white;
+  border: 1px solid white;
+  background-color: #00943c;
+  color: white;
 }
 
 .contained-button {
-    width: fit-content;
-    border: 1px solid white;
-    background-color: #00943c;
-    color: white;
-    font-weight: 400;
-    font-size: 12px;
-    height: 40px;
+  width: fit-content;
+  border: 1px solid white;
+  background-color: #00943c;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  height: 40px;
 }
 
 .contained-button:hover {
-    background-color: white;
+  background-color: white;
 
-    border: 1px solid #00943c;
-    color: #00943c;
+  border: 1px solid #00943c;
+  color: #00943c;
 }
 
 .outline-dropdown {
-    width: fit-content;
-    border: 1px solid #00943c !important;
-    background-color: white;
-    color: #00943c;
-    font-weight: 400;
-    font-size: 12px;
-    height: 40px;
+  width: fit-content;
+  border: 1px solid #00943c !important;
+  background-color: white;
+  color: #00943c;
+  font-weight: 400;
+  font-size: 12px;
+  height: 40px;
 }
 
 .find-contract h2 {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .find-contract p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .find-contract button {
-
-    font-size: 16px;
-    background-color: #00943c;
+  font-size: 16px;
+  background-color: #00943c;
 }
 
 .news-container {
-    font-size: 12px;
-    background-color: rgb(0, 148, 60);
+  font-size: 12px;
+  background-color: rgb(0, 148, 60);
 }
 
 .news-container {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-.form-control:focus, .form-select:focus , .form-select:focus {
-    box-shadow: 0px 0px 0px 0.25rem rgba(0, 148, 60, 0.25) !important;
+.form-control:focus,
+.form-select:focus,
+.form-select:focus {
+  box-shadow: 0px 0px 0px 0.25rem rgba(0, 148, 60, 0.25) !important;
 }
 
 /* ! profile */
-#profile{
-    margin-bottom: 5rem;
+#profile {
+  margin-bottom: 5rem;
 }
 #profile .profile-pic-container {
-    overflow: clip;
+  overflow: clip;
 }
 
 #profile .profile-pic-container img {
-    width: 100%;
+  width: 100%;
 }
 #profile .testimonial-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
 }
-#profile .logo-holder{
-    padding: 1.5rem;
-    width: 50%;
-    overflow: clip;
+#profile .logo-holder {
+  padding: 1.5rem;
+  width: 50%;
+  overflow: clip;
 }
-#profile .logo-holder img{
-    width: 100%;
+#profile .logo-holder img {
+  width: 100%;
 }
-#profile .text-holder{
-    padding: 1rem;
-    width: 50%;
+#profile .text-holder {
+  padding: 1rem;
+  width: 50%;
+}
+
+/* ! seller contract */
+
+.seller-contract p {
+  margin: 0;
 }

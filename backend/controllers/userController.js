@@ -20,7 +20,7 @@ exports.postUser = async (req, res) => {
       else {
         user = await user.save()
         if (!user) {
-          return res.status(400).json({ error: 'something went wrong while creating your account' })
+          return res.status(401).json({ error: 'something went wrong while creating your account' })
         }
         res.send(user)
       }

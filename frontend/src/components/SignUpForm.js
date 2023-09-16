@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-
+import axios from 'axios'
 import Logo from "../assets/images/Logo.png"
 
 const SignUpForm = () => {
@@ -9,7 +9,7 @@ const SignUpForm = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
+    const [number, setNumber] = useState('');
     const [password, setPassword] = useState('');
     const [role, setRole] = useState('');
 
@@ -24,29 +24,33 @@ const SignUpForm = () => {
         const formData = {
             name,
             email,
-            phoneNumber,
+            number,
             password,
             role,
         };
-
+        console.log(formData);
         try {
             // Make a POST request to your API
-            const response = await fetch('your-api-endpoint-url', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                // Handle a successful response here
-                const data = await response.json();
-                console.log(data);
-            } else {
-                // Handle errors here
-                console.error('Error:', response.status);
-            }
+            // fetch('api/signup', {
+            //     method: 'POST',
+            //     headers: {
+            //         Accept: 'application/json',
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(formData),
+            // })
+            //     .then(data => {
+            //         return data.json()
+            //     })
+            //     .then(data => {
+            //         console.log(data);
+            //     })
+            //     .catch(err => console.log(err))
+            axios.post('http://localhost:3000/api/signup',formData)
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(err => console.log(err))
         } catch (error) {
             // Handle network or other errors
             console.error('Error:', error);
@@ -91,15 +95,15 @@ const SignUpForm = () => {
                                 />
                             </div>
                             <div className="my-3">
-                                <label htmlFor="InputPhoneNumber" className="form-label fs-6 mb-1">
+                                <label htmlFor="InputNumber" className="form-label fs-6 mb-1">
                                     Phone Number
                                 </label>
                                 <input
                                     type="tel"
                                     className="form-control"
-                                    id="InputPhoneNumber"
-                                    value={phoneNumber}
-                                    onChange={(e) => setPhoneNumber(e.target.value)}
+                                    id="InputNumber"
+                                    value={number}
+                                    onChange={(e) => setNumber(e.target.value)}
                                 />
                             </div>
                             <div className="my-3">

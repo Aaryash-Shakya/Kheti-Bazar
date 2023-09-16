@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 require('dotenv').config()
 require('./db/connection')
+const cors = require('cors')
 const morgan = require('morgan')
 
 
@@ -13,6 +14,7 @@ const orderRoute = require('./routes/orderRoute')
 const contractRoute = require('./routes/contractRoute')
 
 // middleware
+app.use(cors());
 app.use(morgan('dev'))
 app.use(express.json())
 

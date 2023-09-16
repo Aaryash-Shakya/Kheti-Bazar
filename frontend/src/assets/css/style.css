@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-green: #00943c;
+}
+.main-green{
+    background-color: var(--main-green);
+}
+.button-border{
+    background-color: #00943c;
+    border: 1px solid #00943c;
+    height: 40px;
+}
+
 .logo-img{
     width: 100px;
     height: 100px;
@@ -14,3 +30,28 @@
     height: 100vh;
 }
 
+
+
+
+
+/* ! Contract */
+.create-contract-btn{
+    width: fit-content;
+    border: 1px solid #00943c;
+    background-color: white;
+    color: #00943c;
+    font-weight: 400;
+    font-size: 12px;
+    height: 40px;
+}
+.find-contract h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.find-contract p{
+    font-size: 14px;
+}
+.find-contract button{
+    font-size: 16px;
+    background-color: #00943c;
+}

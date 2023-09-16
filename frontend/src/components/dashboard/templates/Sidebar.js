@@ -25,7 +25,7 @@ const Navbar = () => {
                             </button>
                         </li>
                         <li>
-                            <button href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <button href="/" class="nav-link link-body-emphasis text-white fs-4 d-flex  align-items-center  " id="pills-contract-tab" data-bs-toggle="pill" data-bs-target="#pills-contract" type="button" role="tab" aria-controls="pills-contract" aria-selected="false">
                                 <Icon icon="mdi:file-document-edit" className='pe-1' />
                                 Contracts
                             </button>

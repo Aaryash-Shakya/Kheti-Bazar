@@ -15,11 +15,11 @@ const ContractDetails = () => {
                         Requirements
                     </div>
                     <ul>
-                        <li>Crop Type: {}</li>
-                        <li>Quantity Needed: {}</li>
-                        <li>Quantity Requirements: {}</li>
-                        <li>Deliver Timeframe: {}</li>
-                        <li>Location: Kathmandu</li>
+                        <li>Crop Type: { }</li>
+                        <li>Quantity Needed: { }</li>
+                        <li>Quantity Requirements: { }</li>
+                        <li>Deliver Timeframe: { }</li>
+                        <li>Location: { }</li>
                     </ul>
 
                 </div>

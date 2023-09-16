@@ -14,10 +14,10 @@ const UserMain = () => {
     return (
         <div>
             <div className='row mw-100 gx-0'>
-                <div className='sidebar-container' style={{width:"20%"}}>
+                <div id='sidebarContainer' className='sidebar-container'>
                     <Sidebar />
                 </div>
-                <div className='content-container' style={{width:"80%"}}>
+                <div className='content-container'>
                     <div>
                         <Topbar />
                     </div>
@@ -35,6 +35,7 @@ const UserMain = () => {
                 </div>
 
             </div>
+
         </div>
     )
 }

@@ -1,57 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
 * {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 :root {
-  --main-green: #00943c;
+    --main-green: #00943c;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .main-green {
-  background-color: var(--main-green);
+    background-color: var(--main-green);
 }
 
 .logo-img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
 }
 
 .back-black {
-  background-color: #000000;
-  height: 70vh;
+    background-color: #000000;
+    height: 70vh;
 }
 
 .side-bar {
-  height: 100vh;
+    height: 100vh;
 }
 
 /* !sidebar */
-/* lg */
-.sidebar-button{
+.sidebar-button {
     display: none;
 }
-@media screen and (min-width: 992px){ 
-    .sidebar-container,.side-bar{
+li.rounded-2:hover{
+    border: 1px solid white;
+}
+/* md */
+@media screen and (min-width: 768px) {
+    .sidebar-container,
+    .side-bar {
         width: 20%;
     }
-    .content-container{
+
+    .content-container {
         width: 80%;
     }
 }
-/* md */
-@media screen and (min-width: 576px){ 
-    .sidebar-container,.side-bar{
-        width: 25%;
+@media screen and (max-width: 767px) {
+    .sidebar-container,
+    .side-bar {
+        width: 60%;
     }
-    .content-container{
-        width: 75%;
+
+    .content-container {
+        width: 100%;
     }
+}
+
+#sidebarToggleBtn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+}
+.active-border{
+    border: 1px solid white;
 }
 /* else */
 /* @media screen and (max-width: 575px){ 
@@ -61,16 +79,10 @@ a {
     .content-container{
         width: 100%;
     }
-    .sidebar-button{
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
 } */
 
 /* ! Contract */
-.outline-button{
+.outline-button {
     width: fit-content;
     border: 1px solid #00943c;
     background-color: white;
@@ -79,32 +91,75 @@ a {
     font-size: 12px;
     height: 40px;
 }
+
+.outline-button:hover {
+    border: 1px solid white;
+    background-color: #00943c;
+    color: white;
+}
+
 .contained-button {
-  width: fit-content;
-  border: 1px solid white;
-  background-color: #00943c;
-  color: white;
-  font-weight: 400;
-  font-size: 12px;
-  height: 40px;
+    width: fit-content;
+    border: 1px solid white;
+    background-color: #00943c;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    height: 40px;
 }
 
 .contained-button:hover {
-  border: 1px solid #00943c;
-  color: #00943c;
-}
-.find-contract h2 {
-  font-size: 32px;
-  font-weight: bold;
-}
-.find-contract p {
-  font-size: 14px;
-}
-.find-contract button {
-  font-size: 16px;
-  background-color: #00943c;
+    background-color: white;
+
+    border: 1px solid #00943c;
+    color: #00943c;
 }
 
-.news-container{
+.find-contract h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.find-contract p {
+    font-size: 14px;
+}
+
+.find-contract button {
+    font-size: 16px;
+    background-color: #00943c;
+}
+
+.news-container {
     font-size: 12px;
+}
+
+/* ! profile */
+#profile{
+    margin-bottom: 5rem;
+}
+#profile .profile-pic-container {
+    overflow: clip;
+}
+
+#profile .profile-pic-container img {
+    width: 100%;
+}
+#profile .testimonial-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 10px;
+}
+#profile .logo-holder{
+    padding: 1.5rem;
+    width: 50%;
+    overflow: clip;
+}
+#profile .logo-holder img{
+    width: 100%;
+}
+#profile .text-holder{
+    padding: 1rem;
+    width: 50%;
 }

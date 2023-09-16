@@ -1,7 +1,15 @@
 import { Icon } from '@iconify/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import News from '../../assets/images/News.png'
 const Contract = () => {
+    useEffect(() => {
+        const setActive = () =>{
+            document.getElementById('contractBorder').classList.add('active-border')
+        }
+        setTimeout(() => { 
+            setActive();
+        }, 100);
+    });
     return (
         <div>
             <div className="px-4 container mw-100">

@@ -4,10 +4,10 @@ import News from '../../assets/images/News.png'
 import { Link } from 'react-router-dom';
 const Contract = () => {
     useEffect(() => {
-        const setActive = () =>{
+        const setActive = () => {
             document.getElementById('contractBorder').classList.add('active-border')
         }
-        setTimeout(() => { 
+        setTimeout(() => {
             setActive();
         }, 100);
     });
@@ -44,11 +44,11 @@ const Contract = () => {
                             <p className=''>
                                 Contracts: Your Path to Growth and Success. Seize the Opportunity, Ink the Deal, Reap the Rewards.Embrace contracts as the foundation of collaboration, trust, and progress. Seize the pen and let it ink your journey towards success, one contract at a time. Your commitment today is the harvest of prosperity tomorrow
                             </p>
-                            <Link to='/findcontracts'>
+                                <Link to='/findcontracts'>
                             <button className="find-contracts-btn btn btn-success w-50 py-3">
-                                Find Contracts
-                                <Icon icon="ph:bag-fill" className='ms-2' />
-                            </button>
+                                    Find Contracts
+                                    <Icon icon="ph:bag-fill" className='ms-2' />
+                                </button>
                             </Link>
                         </div>
                     </div>

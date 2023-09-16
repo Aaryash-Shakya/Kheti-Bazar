@@ -1,10 +1,12 @@
 import React from "react";
 
 const FindContract = () => {
+
+  const uRole = parseInt(localStorage.getItem("urole"))
   return (
     <div className="mx-5">
       {/* title */}
-      <div className="fs-3 mb-4 fw-bold">Find Company For Contract</div>
+      <div className="fs-3 mb-4 fw-bold">Find {uRole === 1 ? "Farmer" : "Company"} For Contract</div>
       <div>
         <div className="row">
           <div className="col-lg-6 col-sm-12">

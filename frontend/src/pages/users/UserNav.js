@@ -10,7 +10,7 @@ const UserNav = () => {
         <div>
             <div className='row mw-100'>
 
-                <div className='sidebar-container' id='sidebarContainer'>
+                <div className='sidebar-container no-print' id='sidebarContainer'>
                     <Sidebar />
                 </div>
                 <div className='content-container'>

@@ -3,6 +3,11 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+#webpack-dev-server-client-overlay-div{
+    display: none !important;
+    height: 0px;
+    width: 0px;
+}
 @media print{
     .no-print{
         display: none;

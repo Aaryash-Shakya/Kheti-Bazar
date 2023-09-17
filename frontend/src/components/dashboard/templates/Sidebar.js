@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // import iconify for icons
 import { Icon } from '@iconify/react';
@@ -8,8 +8,24 @@ import Logo from '../../../assets/images/white-logo.png'
 
 
 const Navbar = () => {
-    let sidebarContainer = document.querySelector('#sidebarContainer')
-    const toggle = () => {
+    
+    useEffect(() => {
+        let sidebarContainer = document.querySelector('#sidebar')
+        
+        function checkScreenWidth() {
+            console.log(window.innerWidth)
+            if (window.innerWidth < 767) {
+                sidebarContainer.style.marginLeft = "-60%"
+            }
+            else {
+                sidebarContainer.style.marginLeft = "0px"
+            }
+        }
+        // Add an event listener for the resize event
+        window.addEventListener('resize', checkScreenWidth)
+    })
+    let toggle =() => {
+        let sidebarContainer = document.querySelector('#sidebarContainer')
         if (sidebarContainer.style.marginLeft === "-60%") {
             sidebarContainer.style.marginLeft = "0px"
         }
@@ -17,17 +33,6 @@ const Navbar = () => {
             sidebarContainer.style.marginLeft = "-60%"
         }
     }
-    function checkScreenWidth() {
-        console.log(window.innerWidth)
-        if (window.innerWidth < 767) {
-            sidebarContainer.style.marginLeft = "-60%"
-        }
-        else{
-            sidebarContainer.style.marginLeft = "0px"
-        }
-    }
-    // Add an event listener for the resize event
-    window.addEventListener('resize', checkScreenWidth)
     return (
         <div className='no-print'>
             <div>
@@ -73,7 +78,7 @@ const Navbar = () => {
                 </div>
             </div>
             <button id='sidebarToggleBtn' className='btn btn-success d-md-none' onClick={toggle}>
-                <Icon icon="ci:hamburger-lg" className='fs-3 p-0'/>
+                <Icon icon="ci:hamburger-lg" className='fs-3 p-0' />
             </button>
         </div>
     )

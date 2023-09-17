@@ -40,12 +40,12 @@ const FindContract = () => {
                   </a>
                 </div>
                 <div className="d-flex align-items-center justify-content-start ms-0">
-                  <a href="/">
+                  <a href="/profile">
                     <button class="btn outline-button btn-success btn-sm px-3 me-5">
                       Contact
                     </button>
                   </a>
-                  <a href="/contractDetails/65057e6aaf10c778e6cf9da4">
+                  <a href="/contractDetails">
                     <button class="btn contained-button btn-outlined btn-sm px-3">
                       See More
                     </button>

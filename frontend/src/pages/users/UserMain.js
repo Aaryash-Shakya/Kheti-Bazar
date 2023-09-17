@@ -14,7 +14,7 @@ const UserMain = () => {
     return (
         <div>
             <div className='row mw-100 gx-0'>
-                <div id='sidebarContainer' className='sidebar-container'>
+                <div id='sidebarContainer' className='sidebar-container no-print'>
                     <Sidebar />
                 </div>
                 <div className='content-container'>

@@ -32,7 +32,7 @@ const Topbar = () => {
         // })
     }
     return (
-        <div >
+        <div className='no-print' >
             {
                 localStorage.getItem('uid') === '' &&
                 <div className='d-flex align-items-center justify-content-end py-3 me-3'>

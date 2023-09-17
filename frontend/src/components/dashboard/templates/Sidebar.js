@@ -29,7 +29,7 @@ const Navbar = () => {
     // Add an event listener for the resize event
     window.addEventListener('resize', checkScreenWidth)
     return (
-        <div>
+        <div className='no-print'>
             <div>
                 <div id='sidebar' className='side-bar bg-success d-flex justify-content-center flex-column align-items-center position-fixed left-0 top-0' >
                     <div className='mb-5'>

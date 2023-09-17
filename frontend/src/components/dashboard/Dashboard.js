@@ -48,52 +48,120 @@ const Dashboard = () => {
                                     contractList.map((contract, index) => {
                                         console.log(contract)
                                         return (
-                                            <tr className='d-flex justify-content-evenly align-items-center' key={index}>
-                                                <td className='index'>
-                                                    <div className='d-flex justify-content-end align-items-center h-100'>
-                                                        {index + 1}
-                                                    </div>
-                                                </td>
-                                                <td className='contract-name'>
-                                                    <div className='d-flex justify-content-start align-items-center h-100'>
-                                                        {contract.name}
-                                                    </div>
-                                                </td>
-                                                <td className='contract.status'>
-                                                    <div className='d-flex justify-content-end align-items-center h-100'>
-                                                        {contract.status === 0 ? <div>
-                                                            <span className='small-font-size pe-1'>
-                                                                Pending
-                                                            </span>
-                                                            <button className='btn btn-sm btn-success bg-warning border border-warning'>
+                                            <div>
+                                                <tr className='d-flex justify-content-evenly align-items-center' key={index}>
+                                                    <td className='index'>
+                                                        <div className='d-flex justify-content-end align-items-center h-100 me-3'>
+                                                            {index + 1}
+                                                        </div>
+                                                    </td>
+                                                    <td className='contract-name'>
+                                                        <div className='d-flex justify-content-start align-items-center h-100'>
+                                                            Seeking Buyer for Contract Farming - Wheat Production
+                                                        </div>
+                                                    </td>
+                                                    <td className='contract.status'>
+                                                        <div className='d-flex justify-content-end align-items-center h-100'>
+                                                            {contract.status === 0 ? <div>
+                                                                <span className='small-font-size pe-1'>
+                                                                    Pending
+                                                                </span>
+                                                                <button className='btn btn-sm btn-success bg-warning border border-warning'>
+                                                                </button>
+                                                            </div> : contract.status === 1 ? <div>
+                                                                <span className='small-font-size pe-1'>
+                                                                    Rejected
+                                                                </span>
+                                                                <button className='btn btn-sm btn-success bg-danger border border-danger'>
+                                                                </button>
+                                                            </div> :
+                                                                contract.status === 2 ?
+                                                                    <div>
+                                                                        <span className='small-font-size pe-1'>
+                                                                            Active
+                                                                        </span>
+                                                                        <button className='btn btn-sm btn-success bg-success border border-success '>
+                                                                        </button>
+                                                                    </div> : ""}
+                                                        </div>
+                                                    </td>
+                                                    <td className='action'>
+                                                        <>
+                                                            <button className='btn btn-sm btn-success outline-button px-5' onClick={() => {
+                                                                navigate(`/contractDetails`)
+                                                            }}>
+                                                                {" Details"}
                                                             </button>
-                                                        </div> : contract.status === 1 ? <div>
-                                                            <span className='small-font-size pe-1'>
-                                                                Rejected
-                                                            </span>
-                                                            <button className='btn btn-sm btn-success bg-danger border border-danger'>
+                                                        </>
+                                                    </td>
+                                                </tr>
+                                                <tr className='d-flex justify-content-evenly align-items-center'>
+                                                    <td className='index'>
+                                                        <div className='d-flex justify-content-end align-items-center h-100 me-3'>
+                                                            2
+                                                        </div>
+                                                    </td>
+                                                    <td className='contract-name'>
+                                                        <div className='d-flex justify-content-start align-items-center h-100'>
+                                                            Seeking Buyer for Contract Farming - Wheat Production
+                                                        </div>
+                                                    </td>
+                                                    <td className='contract.status'>
+                                                        <div className='d-flex justify-content-end align-items-center h-100'>
+                                                            <div>
+                                                                <span className='small-font-size pe-1'>
+                                                                    Review
+                                                                </span>
+                                                                <button className='btn btn-sm btn-warning bg-warning border border-warning '>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className='action'>
+                                                        <>
+                                                            <button className='btn btn-sm btn-success outline-button px-5' onClick={() => {
+                                                                navigate(`/contractDetails`)
+                                                            }}>
+                                                                {" Details"}
                                                             </button>
-                                                        </div> :
-                                                            contract.status === 2 ?
-                                                                <div>
-                                                                    <span className='small-font-size pe-1'>
-                                                                        Active
-                                                                    </span>
-                                                                    <button className='btn btn-sm btn-success bg-success border border-success '>
-                                                                    </button>
-                                                                </div> : ""}
-                                                    </div>
-                                                </td>
-                                                <td className='action'>
-                                                    <>
-                                                        <button className='btn btn-sm btn-success outline-button px-5' onClick={() => {
-                                                            navigate(`/contractDetails/65057e6aaf10c778e6cf9da4`)
-                                                        }}>
-                                                            {" Details"}
-                                                        </button>
-                                                    </>
-                                                </td>
-                                            </tr>
+                                                        </>
+                                                    </td>
+                                                </tr>
+                                                <tr className='d-flex justify-content-evenly align-items-center'>
+                                                    <td className='index'>
+                                                        <div className='d-flex justify-content-end align-items-center h-100 me-3'>
+                                                            2
+                                                        </div>
+                                                    </td>
+                                                    <td className='contract-name'>
+                                                        <div className='d-flex justify-content-start align-items-center h-100'>
+                                                            Seeking Buyer for Contract Farming - Wheat Production
+                                                        </div>
+                                                    </td>
+                                                    <td className='contract.status'>
+                                                        <div className='d-flex justify-content-end align-items-center h-100'>
+                                                            <div>
+                                                                <span className='small-font-size pe-1'>
+                                                                    Active
+                                                                </span>
+                                                                <button className='btn btn-sm btn-success bg-success border border-success '>
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className='action'>
+                                                        <>
+                                                            <button className='btn btn-sm btn-success outline-button px-5' onClick={() => {
+                                                                navigate(`/contractDetails`)
+                                                            }}>
+                                                                {" Details"}
+                                                            </button>
+                                                        </>
+                                                    </td>
+                                                </tr>
+                                            </div>
                                         )
                                     }
                                     )}
@@ -111,21 +179,18 @@ const Dashboard = () => {
                                 {
                                     contractList.map((contract, index) => {
                                         return (
+                                            <div>
                                             <tr className='d-flex justify-content-evenly align-items-center'>
                                                 <td className='index'>
-                                                    {contract.status > 2 ?
-                                                        <div className='d-flex justify-content-end align-items-center h-100'>
-                                                            {index + 1}
-                                                        </div> : ""
-                                                    }
+                                                    <div className='d-flex justify-content-end align-items-center h-100 me-3'>
+                                                        1
+                                                    </div>
                                                 </td>
                                                 <td className='contract-name'>
-                                                    {
-                                                        contract.status > 2 ?
-                                                            <div className='d-flex justify-content-start align-items-center h-100'>
-                                                                {"Rajendra Acharya is the King"}
-                                                            </div> : ""
-                                                    }
+
+                                                    <div className='d-flex justify-content-start align-items-center h-100'>
+                                                        Standard Crop Order Template
+                                                    </div> 
                                                 </td>
                                                 <td className='contract-name'>
                                                     <div className='d-flex justify-content-start align-items-center h-100'>
@@ -134,15 +199,42 @@ const Dashboard = () => {
                                                 </td>
                                                 <td className='action'>
                                                     <div className='d-flex'>
-                                                        {contract.status !== 0 & contract.status !== 1 & contract.status !== 2 ? <div className='d-flex justify-content-end align-items-center'>
-                                                            <button className='btn btn-sm outline-button btn-success px-5'>
-                                                                Edit
-                                                            </button>
-                                                        </div> : ""}
+                                                        <button className='btn btn-sm outline-button btn-success px-5'>
+                                                            Edit
+                                                        </button>
 
                                                     </div>
                                                 </td>
-                                            </tr>)
+                                            </tr>
+                                            <tr className='d-flex justify-content-evenly align-items-center'>
+                                                <td className='index'>
+                                                    <div className='d-flex justify-content-end align-items-center h-100 me-3'>
+                                                        2
+                                                    </div>
+                                                </td>
+                                                <td className='contract-name'>
+
+                                                    <div className='d-flex justify-content-start align-items-center h-100'>
+                                                        Standard Order Template
+                                                    </div> 
+                                                </td>
+                                                <td className='contract-name'>
+                                                    <div className='d-flex justify-content-start align-items-center h-100'>
+                                                        {/* empty td for styling */}
+                                                    </div>
+                                                </td>
+                                                <td className='action'>
+                                                    <div className='d-flex'>
+                                                        <button className='btn btn-sm outline-button btn-success px-5'>
+                                                            Edit
+                                                        </button>
+
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </div>
+                                            )
                                     })
                                 }
 

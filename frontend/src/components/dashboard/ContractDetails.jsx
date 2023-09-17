@@ -89,4 +89,4 @@ const ContractDetails = () => {
     )
 }
 
-export default ContractDetails
+export default ContractDetails;

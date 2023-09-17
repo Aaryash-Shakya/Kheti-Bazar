@@ -23,7 +23,7 @@ const Contract = () => {
                             <img className='w-100 object-fit-cover' src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3755706.jpg&fm=jpg" alt="" />
                                 <Link to='/createcontract' className='my-3 mx-auto'>
                                 <button className='outline-button btn btn-success'>
-                                    Create Contracts
+                                    Create Contract Template
                                 </button>
                                 </Link>
                         </div>

@@ -10,10 +10,6 @@ td{
   padding: auto;
 }
 
-.contracts-type{
-  
-}
-
 :root {
   --main-green: #00943c;
 }
@@ -219,4 +215,10 @@ li.rounded-2:hover{
 /*  */
 .small-font-size{
   font-size: 12px;
+}
+
+
+/*  */
+td.index {
+  width: 50px !important;
 }

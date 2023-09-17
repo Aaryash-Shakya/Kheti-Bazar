@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+import axios from 'axios';
+
+import { backendUrl } from '../../../Api'
+import { useNavigate } from 'react-router-dom'
 
 const CreateContractForm = () => {
 
-
+    const navigate = useNavigate()
     // Define state variables for form fields
     const [contractorName, setContractorName] = useState('');
     const [itemNeeded, setItemNeeded] = useState('');
@@ -33,28 +37,18 @@ const CreateContractForm = () => {
 
         try {
             // Make a POST request to your API
-            const response = await fetch('your-api-endpoint-url', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                // Handle a successful response here
-                const data = await response.json();
-                console.log(data);
-            } else {
-                // Handle errors here
-                console.error('Error:', response.status);
-            }
+            axios.post(`${backendUrl}/postcontract`, formData)
+                .then(res => {
+                    console.log(res);
+                    navigate('/dashboard')
+                }
+                )
+                .catch(err => console.log(err))
         } catch (error) {
             // Handle network or other errors
             console.error('Error:', error);
         }
-    };
-
+    }
     return (
         <div className='container ms-lg-4 px-md-5 ms-2 px-2'>
             <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Create Contract Template</h3>

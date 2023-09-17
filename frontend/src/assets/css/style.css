@@ -49,7 +49,7 @@ li.rounded-2 {
   border: 1px solid transparent;
 }
 li.rounded-2:hover{
-    border: 1px solid white;
+    background-color: hsl(144, 100%, 31%);
     color: white !important;
 }
 /* md */
@@ -81,7 +81,8 @@ li.rounded-2:hover{
   z-index: 99;
 }
 .active-border{
-    border: 1px solid white !important;
+    font-weight: bold;
+    margin-left: 10px;
 }
 /* else */
 /* @media screen and (max-width: 575px){ 

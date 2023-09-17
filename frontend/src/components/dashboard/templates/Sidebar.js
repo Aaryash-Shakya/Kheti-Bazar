@@ -41,7 +41,7 @@ const Navbar = () => {
                         <li className='rounded-2' id='dashboardBorder'>
                             <a href='/dashboard'>
                                 <button class="nav-link text-white fs-5 d-flex align-items-center">
-                                    <Icon icon="ri:dashboard-fill" className='pe-1' />
+                                    <Icon icon="ri:dashboard-fill" className='pe-1 ' />
                                     Dashboard
                                 </button>
                             </a>

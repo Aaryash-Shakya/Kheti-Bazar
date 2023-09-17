@@ -87,3 +87,11 @@ exports.contractStatus = async (req, res) => {
   }
   return res.status(200).json({ msg: `contract status: ${contract.status}` })
 }
+
+exports.contractList = async (req, res) => {
+    const contract = await Contract.find()
+    if (!contract) {
+      return res.status(404).json({ error: 'something went wrong' })
+    }
+    res.send(contract)
+  }

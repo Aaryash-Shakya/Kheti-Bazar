@@ -1,7 +1,21 @@
 import { Icon } from '@iconify/react'
-import React from 'react'
+import React,{useEffect,useState} from 'react'
+import { backendUrl } from '../../Api'
+import axios from 'axios'
 
 const ContractDetails = () => {
+    const [contractData, setContractData] = useState('')
+    useEffect(() => {
+        const uid = localStorage.getItem('uid')
+        if (uid === "")
+            return console.log('not logged in');
+        axios.get(`${backendUrl}/userdetail/${uid}`)
+            .then(contract => {
+                setContractData(contract.data)
+            })
+            .catch(err => console.log(err))
+            console.log(contractData);
+    }, [])
     return (
         <div>
             <div className="container ms-lg-4 px-md-5 ms-2 px-2">

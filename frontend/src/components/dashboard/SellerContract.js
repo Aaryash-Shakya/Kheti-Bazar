@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Icon } from '@iconify/react';
 
-const ContractDetails = () => {
+const SellerContract = () => {
     return (
-        <div className='container seller-contract border border-secondary-subtle rounded-2 px-5 py-3'>
+        <div className='container seller-contract rounded-2 px-5 py-3'>
             <div className='fs-3 mb-4 fw-bold'>
                 Details
             </div>
@@ -153,4 +153,4 @@ const ContractDetails = () => {
     )
 }
 
-export default ContractDetails
+export default SellerContract

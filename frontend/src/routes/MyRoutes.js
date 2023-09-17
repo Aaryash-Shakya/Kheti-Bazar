@@ -19,6 +19,7 @@ import SignUpForm from '../components/SignUpForm'
 import CreateContractForm from '../components/dashboard/forms/CreateContractForm'
 import AppointmentForm from '../components/dashboard/forms/AppointmentForm'
 import ProposedContract from '../components/dashboard/forms/ProposedContract'
+import SellerContract from '../components/dashboard/SellerContract'
 
 const MyRoutes = () => {
     return (
@@ -31,12 +32,12 @@ const MyRoutes = () => {
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/contracts" element={<Contract />} />
                     <Route path="/findContracts" element={<FindContract />} />
-                    <Route path="/sellerContract" element={<ContractDetails />} />
+                    <Route path="/sellerContract" element={<SellerContract />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/createContract" element={<CreateContractForm />} />
                     <Route path="/appointmentForm" element={<AppointmentForm />} />
                     <Route path="/proposedContract" element={<ProposedContract />} />
-                    <Route path="/contractDetails" element={<ContractDetails />} />
+                    <Route path="/contractDetails/:cid" element={<ContractDetails />} />
                 </Route>
             </Routes>
 

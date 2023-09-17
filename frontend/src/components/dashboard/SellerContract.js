@@ -8,7 +8,7 @@ const ContractDetails = () => {
             <div className='fs-3 mb-4 fw-bold'>
                 Details
             </div>
-            <div>
+            <div className='position-relative'>
                 <div className='title mb-3 fs-4  '>
                     Seeking Seller for Contract Farming - Wheat Production
                 </div>
@@ -133,13 +133,21 @@ const ContractDetails = () => {
                     </p>
 
                 </div>
-
                 <div className='mb-3'>
                     <button className='btn outline-button rounded'>
                         View In PDF
                         <Icon icon="codicon:file-pdf" />
                     </button>
                 </div>
+
+                <div className="position-absolute top-0 end-0 pe-0 pt-0">
+                    <a href="/profile">
+                        <button class="btn outline-button btn-success btn-sm rounded-circle fs-5" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="Profile">
+                            <Icon icon="basil:image-solid" />
+                        </button>
+                    </a>
+                </div>
+
                 <div className='mb-3 d-flex justify-content-end'>
                     <a href='/appointmentForm' className='btn outline-button me-5' >
                         Ask for Appointment

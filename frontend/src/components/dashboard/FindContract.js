@@ -1,8 +1,12 @@
 import React from "react";
 
+
+
+import { Icon } from '@iconify/react';
 const FindContract = () => {
 
   const uRole = parseInt(localStorage.getItem("urole"))
+  const uId = localStorage.getItem("uid")
   return (
     <div className="mx-5">
       {/* title */}
@@ -11,8 +15,8 @@ const FindContract = () => {
         <div className="row">
           <div className="col-lg-6 col-sm-12">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title fw-bold mb-3">Special title treatment</h5>
+              <div class="card-body position-relative">
+                <h5 class="card-title fw-bold mb-3">Special title treatment <span className="fw-light" style={{ fontSize: "12px" }}>{"3 days ago"}</span></h5>
                 <p class="card-text">
                   Requirements
                 </p>
@@ -26,6 +30,13 @@ const FindContract = () => {
                 <div className="mb-3">
                   <a href="/" className="text-success">
                     Contractor's Details and Policy
+                  </a>
+                </div>
+                <div className="position-absolute top-0 end-0 pe-5 pt-2">
+                  <a href="/profile">
+                    <button class="btn outline-button btn-success btn-sm rounded-circle fs-5" data-bs-toggle="tooltip"  data-bs-custom-class="custom-tooltip" data-bs-placement="bottom" data-bs-title="Profile">
+                      <Icon icon="basil:image-solid" />
+                    </button>
                   </a>
                 </div>
                 <div className="d-flex align-items-center justify-content-start ms-0">

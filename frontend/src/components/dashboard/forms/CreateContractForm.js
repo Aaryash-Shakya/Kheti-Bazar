@@ -57,7 +57,7 @@ const CreateContractForm = () => {
 
     return (
         <div className='container ms-lg-4 px-md-5 ms-2 px-2'>
-            <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Create Contract</h3>
+            <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Create Contract Template</h3>
             <div>
                 <form onSubmit={handleSubmit}>
                     <div className='mb-3'>

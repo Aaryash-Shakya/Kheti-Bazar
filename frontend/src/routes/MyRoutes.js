@@ -21,6 +21,7 @@ import AppointmentForm from '../components/dashboard/forms/AppointmentForm'
 import ProposedContract from '../components/dashboard/forms/ProposedContract'
 import SellerContract from '../components/dashboard/SellerContract'
 import ContractTemplate from '../components/dashboard/ContractTemplate'
+import Analytics from '../components/Analytics'
 
 const MyRoutes = () => {
     return (
@@ -41,6 +42,7 @@ const MyRoutes = () => {
                     {/* <Route path="/contractDetails/:cid" element={<ContractDetails />} /> */}
                     <Route path="/contractDetails" element={<ContractDetails />} />
                     <Route path="/contracttemplate" element={<ContractTemplate/>} />
+                    <Route path="/analytics" element={<Analytics/>} />
                 </Route>
             </Routes>
 

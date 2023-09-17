@@ -28,6 +28,7 @@ const ContractDetails = () => {
                     Payment Amount: 22000 <br />
                     Payment Schedule: 50% on order, and remaining 50% on delivery <br />
                     Payment Method: Bank Transfer <br />
+                    ESCROW: 
                 </p>
                 <p>
                     <strong>Quality Assurance</strong><br />

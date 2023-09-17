@@ -56,7 +56,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className='rounded-2' id='DashboardBorder'>
-                            <a href="/" class="nav-link text-white fs-5 d-flex  align-items-center  ">
+                            <a href="/analytics" class="nav-link text-white fs-5 d-flex  align-items-center  ">
                                 <Icon icon="ic:outline-analytics" className='pe-1 fs-3' />
                                 Analytics
                             </a>

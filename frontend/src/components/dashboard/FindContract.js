@@ -6,7 +6,6 @@ import { Icon } from '@iconify/react';
 const FindContract = () => {
 
   const uRole = parseInt(localStorage.getItem("urole"))
-  const uid = localStorage.getItem("uid")
   return (
     <div className="mx-5">
       {/* title */}

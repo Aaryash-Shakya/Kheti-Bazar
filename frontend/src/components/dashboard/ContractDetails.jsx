@@ -1,12 +1,11 @@
 import { Icon } from '@iconify/react'
-import React,{useEffect,useState} from 'react'
-import { backendUrl } from '../../Api'
-import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
+
+// import { useNavigate } from 'react-router-dom'
 
 const ContractDetails = () => {
-    const navigate= useNavigate()
-    const cid = '65057e6aaf10c778e6cf9da4'
+    // const navigate= useNavigate()
+    // const cid = '65057e6aaf10c778e6cf9da4'
     return (
         <div id='contractDetailContainer'>
             <div className="container ms-lg-4 px-md-5 ms-2 px-2">

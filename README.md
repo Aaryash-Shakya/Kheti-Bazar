@@ -14,3 +14,14 @@ Additionally, the system emphasizes the buyer's demand for quality crops and liv
 By following government baseline policies, this contract farming system aims to create a transparent and equitable environment for both farmers and buyers. It promotes fair pricing mechanisms that consider the interests of all parties involved, while also ensuring the production of high-quality crops and livestock as per the buyer's expectations.
 
 This README abstract provides an overview of the contract farming system that aligns with government policies, focusing on price negotiation and quality demands in crop and livestock production. Further details regarding the implementation, specific policies, operational procedures, and potential benefits can be found in the accompanying documentation.
+
+#Presentation
+<a href="https://www.canva.com/design/DAFupad0FiY/TKMc11sG-IGpJX9Z04o_Jw/view?utm_content=DAFupad0FiY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1">https://www.canva.com/design/DAFupad0FiY/TKMc11sG-IGpJX9Z04o_Jw/view?utm_content=DAFupad0FiY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1</a>
+
+#Figma Prototype
+<a href="https://www.figma.com/proto/VLNB6etBNth5ADidC3aYVo/hackathon?page-id=0%3A1&type=design&node-id=57-1867&viewport=234%2C199%2C0.06&t=x15qrQ5pgZPdu9nk-1&scaling=min-zoom&starting-point-node-id=57%3A1867&mode=design
+">https://www.figma.com/proto/VLNB6etBNth5ADidC3aYVo/hackathon?page-id=0%3A1&type=design&node-id=57-1867&viewport=234%2C199%2C0.06&t=x15qrQ5pgZPdu9nk-1&scaling=min-zoom&starting-point-node-id=57%3A1867&mode=design
+</a>
+
+#Documentation Docs
+<a href="https://docs.google.com/document/d/1p_7xIraZnZ5r7mLfT7D6t9VIOTajt8IJoa91hh5Uhuw/edit">https://docs.google.com/document/d/1p_7xIraZnZ5r7mLfT7D6t9VIOTajt8IJoa91hh5Uhuw/edit</a>

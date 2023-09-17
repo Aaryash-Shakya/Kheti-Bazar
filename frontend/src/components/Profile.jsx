@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import ProfilePicture from '../assets/images/profile-picture.png'
 import News from '../assets/images/News.png'
 import axios from 'axios'
@@ -6,15 +6,15 @@ import { backendUrl } from '../Api'
 import { Link } from 'react-router-dom'
 
 const Profile = () => {
-    const[userData,setUserData]=useState('')
-    useEffect(()=>{
+    const [userData, setUserData] = useState('')
+    useEffect(() => {
         const uid = localStorage.getItem('uid')
         axios.get(`${backendUrl}/userdetail/${uid}`)
-        .then(user=>{
-            console.log(user.data);
-            setUserData(user.data)
-        })
-    },[ ])   
+            .then(user => {
+                console.log(user.data);
+                setUserData(user.data)
+            })
+    }, [])
 
     return (
         <div>
@@ -32,22 +32,35 @@ const Profile = () => {
                 <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Land and Crops Description</h3>
                 <div className="row g-3">
                     <div className="col-md-8 p-3" style={{ backgroundColor: "#edf8e8" }}>
-                        <p>Land location : Shantinagar, Kathmandu</p>
-                        <p>Land Size ( in Sq. Meter ) : 250</p>
-                        <p>Fertility : Very High</p>
-                        <p>Soil Type : Fertile</p>
-                        <p>Main Crops : Sugarcane, Wheat</p>
+                        {
+                            userData.role === 0 &&
+                            <>
+                                <p>Land location : Shantinagar, Kathmandu</p>
+                                <p>Land Size ( in Sq. Meter ) : 250</p>
+                                <p>Fertility : Very High</p>
+                                <p>Main Crops : Sugarcane, Wheat</p>
+                            </>
+                        }
+                        {
+                            userData.role === 1 &&
+                            <>
+                                <p>Location : Sanepa, Kathmandu</p>
+                                <p>Completed Contracts : 21</p>
+                                <p>Associated Company : ABC Company</p>
+                                <p>Common Requests : Wheat, Cotton</p>
+                            </>
+                        }
                     </div>
                     <div className="col-md-4 d-flex flex-column align-items-start justify-content-end">
                         <Link to='/dashboard'>
-                        <button className='btn btn-success outline-button'>
-                            Check Contract Status
-                        </button>
+                            <button className='btn btn-success outline-button'>
+                                Check Contract Status
+                            </button>
                         </Link>
                         <Link to='/contracts'>
-                        <button className='btn btn-success contained-button mt-2'>
-                            Send Contract
-                        </button>
+                            <button className='btn btn-success contained-button mt-2'>
+                                Send Contract
+                            </button>
                         </Link>
                     </div>
                 </div>

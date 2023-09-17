@@ -2,6 +2,11 @@ const mongoose = require('mongoose')
 const { ObjectId } = mongoose.Schema
 
 const contractSchema = new mongoose.Schema({
+  name:{
+    type:String,
+    required: true,
+    trim: true
+  },
   order:{
     type: ObjectId,
     required: true,

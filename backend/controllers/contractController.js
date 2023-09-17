@@ -2,21 +2,20 @@ const Contract = require("../models/contractModel");
 
 // to create Order
 exports.postContract = async (req, res) => {
-    // get data from req body and assign in the object. THis obj is sent to db
-    let currentDate = new Date()
-    const specificDate = new Date('2023-09-16');
-    let contract = new Contract({
-        order: req.body.order,
-        farmer_id: req.body.farmer_id,
-        buyer_id: req.body.buyer_id,
-        status: 0,
-        isVerified: false
-    })
-    contract = await contract.save()
-    if (!contract) {
-        return res.status(400).json({ error: 'something went wrong while creating your contract' })
-    }
-    res.send(contract)
+  // get data from req body and assign in the object. THis obj is sent to db
+  let contract = new Contract({
+    name: req.body.name,
+    order: req.body.order,
+    farmer_id: req.body.farmer_id,
+    buyer_id: req.body.buyer_id,
+    status: 0,
+    isVerified: false
+  })
+  contract = await contract.save()
+  if (!contract) {
+    return res.status(400).json({ error: 'something went wrong while creating your contract' })
+  }
+  res.send(contract)
 }
 
 // set order is verified

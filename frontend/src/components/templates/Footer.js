@@ -34,16 +34,16 @@ const Footer = () => {
                             </div>
                             <div className='footer-details'>
                                 <div className='hover-green'>
-                                    rajendraacharya1ls@gamil.com
+                                    rajendraacharya1ls@gmail.com
                                 </div>
                                 <div className='hover-green'>
-                                    benup211@gimail.com
+                                    benup211@gmail.com
                                 </div>
                                 <div className='hover-green'>
                                     aaryashshakya31@gmail.com
                                 </div>
                                 <div className='hover-green'>
-                                    km645195@gamil.com
+                                    km645195@gmail.com
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { backendUrl } from '../../Api';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
 
@@ -199,10 +199,11 @@ const Dashboard = () => {
                                                 </td>
                                                 <td className='action'>
                                                     <div className='d-flex'>
+                                                        <Link to='contracttemplate'>
                                                         <button className='btn btn-sm outline-button btn-success px-5'>
                                                             Edit
                                                         </button>
-
+                                                        </Link>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -225,11 +226,11 @@ const Dashboard = () => {
                                                 </td>
                                                 <td className='action'>
                                                     <div className='d-flex'>
+                                                        <Link to='contracttemplate'>
                                                         <button className='btn btn-sm outline-button btn-success px-5'>
                                                             Edit
                                                         </button>
-
-
+                                                        </Link>
                                                     </div>
                                                 </td>
                                             </tr>

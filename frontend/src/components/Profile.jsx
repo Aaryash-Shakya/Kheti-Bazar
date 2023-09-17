@@ -24,9 +24,11 @@ const Profile = () => {
                         <img src={ProfilePicture} alt="a person face upclose" />
                     </div>
                     <div className="col-lg-6 col-8 d-flex flex-column align-items-start justify-content-center">
-                        <p style={{ fontSize: "20px" }}>
-                            <strong className='fw-bold'>Mr. {userData.name}</strong>
-                            <br />{userData.role === 0 && 'Farmer'}{userData.role === 1 && 'Buyer'}</p>
+                        <p style={{ fontSize: "16px" }}>
+                            <strong className='fw-bold' style={{ fontSize: "20px" }}>Mr. {userData.name}</strong>
+                            <br />{userData.role === 0 && 'Farmer'}{userData.role === 1 && 'Buyer'}
+                            <br/>{userData.number}
+                            </p>
                     </div>
                 </div>
                 <h3 className='mt-5 mb-3 fw-bold' style={{ fontSize: "20px" }}>Land and Crops Description</h3>

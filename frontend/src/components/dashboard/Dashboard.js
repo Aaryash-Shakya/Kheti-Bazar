@@ -26,7 +26,7 @@ const Dashboard = () => {
                 // setcontract.Status(data.data[0].contract.status)
                 setContractList(data.data)
             })
-        // .catch(err => console.log(err))
+            .catch(err => console.log(err))
     }, [])
 
 
@@ -87,7 +87,7 @@ const Dashboard = () => {
                                                 <td className='action'>
                                                     <>
                                                         <button className='btn btn-sm btn-success outline-button px-5' onClick={() => {
-                                                            navigate(`/contractDetails`)
+                                                            navigate(`/contractDetails/65057e6aaf10c778e6cf9da4`)
                                                         }}>
                                                             {" Details"}
                                                         </button>

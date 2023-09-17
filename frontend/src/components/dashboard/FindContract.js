@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 const FindContract = () => {
 
   const uRole = parseInt(localStorage.getItem("urole"))
-  const uId = localStorage.getItem("uid")
+  const uid = localStorage.getItem("uid")
   return (
     <div className="mx-5">
       {/* title */}
@@ -45,7 +45,7 @@ const FindContract = () => {
                       Contact
                     </button>
                   </a>
-                  <a href="/contractDetails">
+                  <a href="/contractDetails/65057e6aaf10c778e6cf9da4">
                     <button class="btn contained-button btn-outlined btn-sm px-3">
                       See More
                     </button>

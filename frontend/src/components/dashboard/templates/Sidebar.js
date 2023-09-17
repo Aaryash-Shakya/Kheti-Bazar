@@ -8,8 +8,8 @@ import Logo from '../../../assets/images/white-logo.png'
 
 
 const Navbar = () => {
+    let sidebarContainer = document.querySelector('#sidebarContainer')
     const toggle = () => {
-        let sidebarContainer = document.querySelector('#sidebarContainer')
         if (sidebarContainer.style.marginLeft === "-60%") {
             sidebarContainer.style.marginLeft = "0px"
         }
@@ -20,10 +20,10 @@ const Navbar = () => {
     function checkScreenWidth() {
         console.log(window.innerWidth)
         if (window.innerWidth < 767) {
-            document.querySelector('#sidebarContainer').style.marginLeft = "-60%"
+            sidebarContainer.style.marginLeft = "-60%"
         }
         else{
-            document.querySelector('#sidebarContainer').style.marginLeft = "0px"
+            sidebarContainer.style.marginLeft = "0px"
         }
     }
     // Add an event listener for the resize event

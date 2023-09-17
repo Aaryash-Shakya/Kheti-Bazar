@@ -40,7 +40,7 @@ const Navbar = () => {
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li className='rounded-2' id='dashboardBorder'>
                             <a href='/dashboard'>
-                                <button class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center">
+                                <button class="nav-link text-white fs-5 d-flex align-items-center">
                                     <Icon icon="ri:dashboard-fill" className='pe-1' />
                                     Dashboard
                                 </button>
@@ -48,21 +48,21 @@ const Navbar = () => {
                         </li>
                         <li className='rounded-2' id='contractBorder'>
                             <a href='/contracts'>
-                                <button class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center  ">
+                                <button class="nav-link text-white fs-5 d-flex align-items-center  ">
                                     <Icon icon="mdi:file-document-edit" className='pe-1' />
                                     Contracts
                                 </button>
                             </a>
                         </li>
                         <li className='rounded-2' id='DashboardBorder'>
-                            <a href="/" class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center  ">
+                            <a href="/" class="nav-link text-white fs-5 d-flex  align-items-center  ">
                                 <Icon icon="ic:outline-analytics" className='pe-1' />
                                 Analytics
                             </a>
                         </li>
                         <li className='rounded-2' id='DashboardBorder'>
                             <a href='/findContracts'>
-                                <button class="nav-link link-body-emphasis text-white fs-5 d-flex  align-items-center  ">
+                                <button class="nav-link text-white fs-5 d-flex  align-items-center  ">
                                     <Icon icon="basil:bag-outline" className='pe-1' />
                                     Find Contracts
                                 </button>

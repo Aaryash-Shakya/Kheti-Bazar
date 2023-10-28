@@ -171,7 +171,7 @@ const Dashboard = () => {
                 </div>
                 <div className='mb-5 contracts-type'>
                     <div className=''>
-                        Contracts Type
+                        Contract Template
                     </div>
                     <div className='table'>
                         <table className='table table-striped'>
@@ -199,7 +199,7 @@ const Dashboard = () => {
                                                 </td>
                                                 <td className='action'>
                                                     <div className='d-flex'>
-                                                        <Link to='contracttemplate'>
+                                                        <Link to='/contracttemplate'>
                                                         <button className='btn btn-sm outline-button btn-success px-5'>
                                                             Edit
                                                         </button>
@@ -226,7 +226,7 @@ const Dashboard = () => {
                                                 </td>
                                                 <td className='action'>
                                                     <div className='d-flex'>
-                                                        <Link to='contracttemplate'>
+                                                        <Link to='/contracttemplate'>
                                                         <button className='btn btn-sm outline-button btn-success px-5'>
                                                             Edit
                                                         </button>

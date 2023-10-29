@@ -1,12 +1,12 @@
 # Kheti-Bazar
 A duplicate of our project repository from the TechTrix Hackathon 2023, where I collaborated with 'Rajendra Acharya,' 'Benpu Ghimire,' and 'Kaushal Kishor Mishra' as part of our college team, 'ERROR404,' representing Sagarmatha College of Science and Technology.
 
-- initial commit
-# Error-404
+# Title: "Contract Farming System: Aligning with Government Baseline Policies for Price Negotiation and Quality Demands in Crop and Livestock Production"
+
+## Error-404
 Sagarmatha College of Science and Technology
 
-# Title: "Contract Farming System: Aligning with Government Baseline Policies for Price Negotiation and Quality Demands in Crop and Livestock Production"
-# Abstract
+## Abstract
 This document serves as a README abstract outlining the concept and implementation of a contract farming system that adheres to government baseline policies. The focus of this system is to facilitate price negotiations between farmers and buyers while ensuring that the buyers' demands for crop and livestock quality are met.
 
 Contract farming is an agricultural arrangement where farmers and buyers enter into contractual agreements specifying the terms and conditions of production, including price, quantity, and quality requirements. In this particular system, the contractual framework aligns with the policies set forth by the government, ensuring compliance with relevant regulations and guidelines.
@@ -19,13 +19,11 @@ By following government baseline policies, this contract farming system aims to 
 
 This README abstract provides an overview of the contract farming system that aligns with government policies, focusing on price negotiation and quality demands in crop and livestock production. Further details regarding the implementation, specific policies, operational procedures, and potential benefits can be found in the accompanying documentation.
 
-#Presentation
-<a href="https://www.canva.com/design/DAFupad0FiY/TKMc11sG-IGpJX9Z04o_Jw/view?utm_content=DAFupad0FiY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1">https://www.canva.com/design/DAFupad0FiY/TKMc11sG-IGpJX9Z04o_Jw/view?utm_content=DAFupad0FiY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1</a>
+🔗 Links
 
-#Figma Prototype
-<a href="https://www.figma.com/proto/VLNB6etBNth5ADidC3aYVo/hackathon?page-id=0%3A1&type=design&node-id=57-1867&viewport=234%2C199%2C0.06&t=x15qrQ5pgZPdu9nk-1&scaling=min-zoom&starting-point-node-id=57%3A1867&mode=design
-">https://www.figma.com/proto/VLNB6etBNth5ADidC3aYVo/hackathon?page-id=0%3A1&type=design&node-id=57-1867&viewport=234%2C199%2C0.06&t=x15qrQ5pgZPdu9nk-1&scaling=min-zoom&starting-point-node-id=57%3A1867&mode=design
-</a>
+- Presentation: <a href="https://www.canva.com/design/DAFupad0FiY/TKMc11sG-IGpJX9Z04o_Jw/view?utm_content=DAFupad0FiY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1">presentation</a>
 
-#Documentation Docs
-<a href="https://docs.google.com/document/d/1p_7xIraZnZ5r7mLfT7D6t9VIOTajt8IJoa91hh5Uhuw/edit">https://docs.google.com/document/d/1p_7xIraZnZ5r7mLfT7D6t9VIOTajt8IJoa91hh5Uhuw/edit</a>
+- Figma Prototype: <a href="https://www.figma.com/proto/VLNB6etBNth5ADidC3aYVo/hackathon?page-id=0%3A1&type=design&node-id=57-1867&viewport=234%2C199%2C0.06&t=x15qrQ5pgZPdu9nk-1&scaling=min-zoom&starting-point-node-id=57%3A1867&mode=design
+">figma prototype</a>
+
+#Documentation Docs: <a href="https://docs.google.com/document/d/1p_7xIraZnZ5r7mLfT7D6t9VIOTajt8IJoa91hh5Uhuw/edit">documentation</a>
